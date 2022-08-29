@@ -15,7 +15,7 @@
 - <a href="https://www.linkedin.com/in/lucas-galvão/">Lucas Galvão</a> 
 - <a href="https:///">Marcos Teixeira</a>
 - <a href="https://www.linkedin.com/in/stefano-parente-652822244/">Stefano Parente</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Vinícius Kenji Kumagai</a>
+- <a href="https:///">Vinícius Kenji Kumagai</a>
 
 ## Descrição
 
