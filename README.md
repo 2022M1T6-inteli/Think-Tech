@@ -8,8 +8,6 @@
 
 ## Think Tech
 
-## Integrantes: <a href="https://www.linkedin.com/in/arthur-oliveira-a06895247/">Arthur Tsukamoto</a>, <a href="https://www.linkedin.com/in/celine-souza-1a38aa225/">Celine Souza</a>, <a href="https://www.linkedin.com/in/eduarda-gonzaga-009794219/">Eduarda Gonzaga</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
-
 ## Integrantes: 
 - <a href="https://https://www.linkedin.com/in/arthur-oliveira-a06895247/">Arthur Tsukamoto</a>
 - <a href="www.linkedin.com/in/celine-souza-1a38aa225/">Celine Souza</a>
