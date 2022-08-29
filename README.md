@@ -12,10 +12,10 @@
 - <a href="https://www.linkedin.com/in/arthur-oliveira-a06895247/">Arthur Tsukamoto</a>
 - <a href="https://www.linkedin.com/in/celine-souza-1a38aa225/">Celine Souza</a>
 - <a href="https://www.linkedin.com/in/eduarda-gonzaga-009794219/">Eduarda Gonzaga</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 5</a>
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 6</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 7</a>
+- <a href="https://www.linkedin.com/in/lucas-galvão/">Lucas Galvão</a> 
+- <a href="https:///">Marcos Teixeira</a>
+- <a href="https://www.linkedin.com/in/stefano-parente-652822244/">Stefano Parente</a> 
+- <a href="https://www.linkedin.com/in/victorbarq/">Vinícius Kenji Kumagai</a>
 
 ## Descrição
 
