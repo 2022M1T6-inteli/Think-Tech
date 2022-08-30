@@ -30,14 +30,6 @@
 
 <p align="center">
 
-
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
-
 ## 🛠 Estrutura de pastas
 
 |--> documentos<br>
