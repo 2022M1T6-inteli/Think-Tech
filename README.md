@@ -13,9 +13,9 @@
 - <a href="https://www.linkedin.com/in/celine-souza-1a38aa225/">Celine Souza</a>
 - <a href="https://www.linkedin.com/in/eduarda-gonzaga-009794219/">Eduarda Gonzaga</a> 
 - <a href="https://www.linkedin.com/in/lucas-galvão/">Lucas Galvão</a> 
-- <a href="https://https://www.linkedin.com/in/marcos-teixeira-37676a24a/">Marcos Teixeira</a>
+- <a href="https://https://www.linkedin.com/in/marcos-teixeira-37676a24a//">Marcos Teixeira</a>
 - <a href="https://www.linkedin.com/in/stefano-parente-652822244/">Stefano Parente</a> 
-- <a href="https://https://www.linkedin.com/in/vinicius-kumagai-219376184/">Vinícius Kenji Kumagai</a>
+- <a href="https://https://www.linkedin.com/in/vinicius-kumagai-219376184//">Vinícius Kenji Kumagai</a>
 
 ## Descrição
 
