@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "PARE! Como ousa invadir o grande sistema da Dell Star!! O que você está fazendo aqui? "
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Desculpe! Não tinha a intenção de insultar alguém. Eu sou Mike e sempre sonhei em trabalhar nesse sistema incrível."
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Então por que não tenta entrar da forma convencional?"
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Até gostaria de tentar, mas não pertenço a nenhum planeta há muito tempo. Fugi de Hewllet 939 com um único objetivo: trabalhar no sistema da grande Dell Star. Desde então vivo como um mochileiro das galáxias, sem pertencer a nenhum planeta..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1661366282.json",
+		"name": "Primeirodialogo"
+	}
+}

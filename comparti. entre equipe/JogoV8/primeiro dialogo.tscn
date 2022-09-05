@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/art/tileset/tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://src/png/Idle__000.png" type="Texture" id=2]
+[ext_resource path="res://primeirodialogo.gd" type="Script" id=3]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites tempora/mesa_recep.png" type="Texture" id=5]
+[ext_resource path="res://sprites tempora/pngwing.com.png" type="Texture" id=6]
+[ext_resource path="res://sprites tempora/porta elevador.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 17.5, 5.76564 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 7.25 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 33.75, 35 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 393216, 0, 0, 393218, 0, 0, 393220, 0, 0, 393222, 0, 0, 393224, 0, 0, 393226, 0, 0, 393228, 0, 0, 393230, 0, 0, 393232, 0, 0, 393234, 0, 0, 393236, 0, 0, 393238, 0, 0, 393240, 0, 0, 393242, 0, 0, 393244, 0, 0, 393246, 0, 0, 393248, 0, 0, 393250, 0, 0, 393252, 0, 0, 393254, 0, 0, 393256, 0, 0, 393260, 0, 0, 393262, 0, 0, 393264, 0, 0, 851968, 10, 0, 851970, 10, 0, 851972, 10, 0, 851974, 10, 0, 851978, 10, 0, 851980, 10, 0, 851982, 10, 0, 851984, 10, 0, 851986, 10, 0, 851988, 10, 0, 851990, 10, 0, 851992, 10, 0, 851994, 10, 0, 851996, 10, 0, 851998, 10, 0, 852000, 10, 0, 852002, 10, 0, 852004, 10, 0, 852006, 10, 0, 852008, 10, 0, 852010, 10, 0, 852012, 10, 0, 852014, 10, 0, 852016, 10, 0, 1376266, 10, 0, 1376267, 10, 0, 1376268, 10, 0, 1376269, 10, 0, 1376270, 10, 0, 1376271, 10, 0, 1441792, 10, 0, 1441793, 10, 0, 1441794, 10, 0, 1441795, 10, 0, 1441796, 10, 0, 1441797, 10, 0, 1441798, 10, 0, 1441799, 10, 0, 1441800, 10, 0, 1441801, 10, 0, 1441802, 10, 0, 1441804, 10, 0, 1441805, 10, 0, 1441806, 10, 0, 1441807, 10, 0, 1441808, 10, 0, 1441809, 10, 0, 1441810, 10, 0, 1441811, 10, 0, 1441812, 10, 0, 1441813, 10, 0, 1441814, 10, 0, 1441815, 10, 0, 1441816, 10, 0, 1441826, 10, 0, 1441827, 10, 0, 1441828, 10, 0, 1441829, 10, 0, 1441830, 10, 0, 1441831, 10, 0, 1441832, 10, 0, 1441833, 10, 0, 1441834, 10, 0, 1441835, 10, 0, 1441836, 10, 0, 1441837, 10, 0, 1441838, 10, 0, 1441839, 10, 0, 1441840, 10, 0, 1507353, 10, 0, 1507354, 10, 0, 1507355, 10, 0, 1507356, 10, 0, 1507357, 10, 0, 1507358, 10, 0, 1507359, 10, 0, 1507360, 10, 0, 1507361, 10, 0, 1507362, 10, 0 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( -19, -52 )
+rotation = 0.114643
+
+[node name="Sprite" type="Sprite" parent="Area2D2"]
+position = Vector2( 388.794, 211.916 )
+rotation = -0.114643
+scale = Vector2( 0.71875, 0.666667 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 426.557, 203.305 )
+rotation = -0.114643
+shape = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 163, 91 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -37, -81 )
+
+[node name="adoy" type="Sprite" parent="Area2D"]
+position = Vector2( 290, 403 )
+scale = Vector2( 0.0732757, 0.0677596 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 243, 408 )
+shape = SubResource( 1 )
+
+[node name="Pngwingcom" type="Sprite" parent="."]
+position = Vector2( 86, 69 )
+rotation = 1.69094
+scale = Vector2( 0.205288, 0.271 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 15, -48 )
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 225, 213 )
+scale = Vector2( 0.75, 0.671875 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 223.25, 219 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
