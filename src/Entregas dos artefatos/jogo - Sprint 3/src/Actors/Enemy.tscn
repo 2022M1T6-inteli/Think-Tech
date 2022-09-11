@@ -8,6 +8,10 @@
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 11.0
+height = 7.0
+
 [sub_resource type="Animation" id=2]
 resource_name = "destroy"
 length = 1.5
@@ -168,10 +172,6 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 0 ]
 }
 
-[sub_resource type="CapsuleShape2D" id=5]
-radius = 11.0
-height = 7.0
-
 [sub_resource type="CanvasItemMaterial" id=6]
 blend_mode = 1
 
@@ -180,7 +180,7 @@ offsets = PoolRealArray( 0.5, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 1 )
 
 [node name="Enemy" type="KinematicBody2D"]
-collision_layer = 2
+collision_layer = 0
 collision_mask = 24
 script = ExtResource( 5 )
 speed = Vector2( 75, 250 )
@@ -210,14 +210,14 @@ flip_h = true
 hframes = 8
 frame = 7
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.5708
+shape = SubResource( 5 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/destroy = SubResource( 2 )
 anims/idle = SubResource( 3 )
 anims/walk = SubResource( 4 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = -1.5708
-shape = SubResource( 5 )
 
 [node name="Explosion" type="CPUParticles2D" parent="."]
 self_modulate = Color( 1, 1, 1, 0.12 )
@@ -247,3 +247,11 @@ stream = ExtResource( 3 )
 
 [node name="Explode" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = -1.5708
+shape = SubResource( 5 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

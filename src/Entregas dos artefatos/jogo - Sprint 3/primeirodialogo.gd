@@ -27,10 +27,10 @@ func _ready():
 	
 	$Area2D/prison.hide() #oculta a prisao
 	
-	if Checkpoint.check==1:
-		$Area2D2/CollisionShape2D.disabled = true
-		$StaticBody2D/Sprite.hide() #porta sprite
-		$StaticBody2D/CollisionShape2D.disabled = true #colision
+	if Checkpoint.check==1: #checkpoint para quando o player for pra batalha, conseguir voltar para onde estava
+		$Area2D2/CollisionShape2D.disabled = true 
+		$StaticBody2D/Sprite.hide() #esconde a porta sprite
+		$StaticBody2D/CollisionShape2D.disabled = true #colision #faz a colisão da porta sumir
 		
 	connect("body_entered", self, '_on_NPC_body_entered')
 	connect("body_exited", self, '_on_NPC_body_exited')

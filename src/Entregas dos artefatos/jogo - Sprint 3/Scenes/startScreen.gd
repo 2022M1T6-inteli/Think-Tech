@@ -18,5 +18,3 @@ func _on_controlBtn_pressed() -> void:
 # Fecha o jogo.
 func _on_quitBtn_pressed() -> void:
 	get_tree().quit()
-	
-	

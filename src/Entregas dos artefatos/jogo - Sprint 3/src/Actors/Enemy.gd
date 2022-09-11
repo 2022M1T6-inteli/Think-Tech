@@ -59,7 +59,7 @@ func _physics_process(_delta):
 		animation_player.play(animation)
 
 
-func destroy():
+func destroy(): # função para ir pra batalha com tiro
 	_state = State.DEAD
 	_velocity = Vector2.ZERO
 	# Checkpoint.lastPosition=self.position
@@ -76,3 +76,15 @@ func get_new_animation():
 	else:
 		animation_new = "destroy"
 	return animation_new
+
+
+
+
+
+
+
+
+func _on_Area2D_body_entered(body): # se ele tocar no enemy, ele vai pra cena do combate
+
+	if body.name == "Player":
+		get_tree().change_scene("res://src2/Battle.tscn")

@@ -18,4 +18,3 @@ position = Vector2( -142, 405 )
 layer = 100
 
 [node name="PauseMenu" parent="InterfaceLayer" instance=ExtResource( 1 )]
-visible = false
