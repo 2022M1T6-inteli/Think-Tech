@@ -161,7 +161,6 @@ func verificar():
 			multi=1
 			$temporario.text = "Vc acertou"
 			chosen_alt=0
-			print($temporario)
 			$Precision.hide()
 			Attack()
 			
