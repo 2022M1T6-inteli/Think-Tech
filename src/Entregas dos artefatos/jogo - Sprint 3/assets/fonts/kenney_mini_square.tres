@@ -2,4 +2,4 @@
 
 [resource]
 antialiased = false
-font_path = "res://assets/theme/fonts/kenney_mini_square.ttf"
+font_path = "res://font/PressStart2P.ttf"
