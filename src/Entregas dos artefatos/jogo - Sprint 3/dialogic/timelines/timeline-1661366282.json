@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "PARE! Como ousa invadir o grande sistema da Dell Star!! O que você está fazendo aqui? "
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1661366282.json",
+		"name": "Primeirodialogo"
+	}
+}
