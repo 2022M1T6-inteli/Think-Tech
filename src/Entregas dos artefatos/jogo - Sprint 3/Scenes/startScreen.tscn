@@ -51,10 +51,10 @@ scale = Vector2( 0.491, 0.518942 )
 texture = ExtResource( 3 )
 
 [node name="startBtn" type="Button" parent="."]
-margin_left = 416.0
-margin_top = 273.0
-margin_right = 633.0
-margin_bottom = 309.0
+margin_left = 414.0
+margin_top = 280.0
+margin_right = 631.0
+margin_bottom = 316.0
 theme = SubResource( 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Start"
