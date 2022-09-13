@@ -24,7 +24,7 @@ func _process(delta):
 
 
 func _ready():
-	
+	$Music_fundo.play()
 	$Area2D/prison.hide() #oculta a prisao
 	
 	if Checkpoint.check==1: #checkpoint para quando o player for pra batalha, conseguir voltar para onde estava
@@ -47,6 +47,7 @@ func _on_Area2D2_body_entered(body):
 	
 	if body.name == "Player":
 		get_tree().paused = true # pausa a tela
+		
 		
 		var dialog = Dialogic.start("dialogocombate")
 
