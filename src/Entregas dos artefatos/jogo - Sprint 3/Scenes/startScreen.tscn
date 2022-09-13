@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/startScreen.gd" type="Script" id=1]
 [ext_resource path="res://font/PressStart2P.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://imagens do jogo/IMG_0106 (1).PNG" type="Texture" id=3]
 [ext_resource path="res://Scenes/wallpaperbetter.com_1024x600.jpg" type="Texture" id=4]
+[ext_resource path="res://Sounds/8-bit-moonlight-sonata-music-loop-20436.mp3" type="AudioStream" id=5]
 
 [sub_resource type="Theme" id=1]
 
@@ -76,6 +77,10 @@ margin_bottom = 449.0
 theme = SubResource( 1 )
 custom_fonts/font = SubResource( 4 )
 text = "Quit"
+
+[node name="Sound_" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+attenuation = 6.498
 
 [connection signal="pressed" from="startBtn" to="." method="_on_startBtn_pressed"]
 [connection signal="pressed" from="controlBtn" to="." method="_on_controlBtn_pressed"]

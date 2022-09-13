@@ -15,6 +15,7 @@ func _process(_delta) -> void:
 		if Global.keyh > 0:
 			Global.keyh -=1
 			$AnimatedSprite.play("aberto")
+			$Open.play()
 			print("ok")
 			player_ref.key = false
 			

@@ -44,7 +44,7 @@ func _on_NPC_body_entered(body):
 
 func _on_Area2D2_body_entered(body):
 	
-
+	
 	if body.name == "Player":
 		get_tree().paused = true # pausa a tela
 		
@@ -68,15 +68,17 @@ func _on_Area2D_body_entered(body):
 	
 	
 	
+	
 	if body.name == "Player":
 		get_tree().paused = true # pausa a tela
 		$Area2D/prison.show()
+		
 		
 		var dialog = Dialogic.start("Primeirodialogo")
 	
 		dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 		dialog.connect('timeline_end', self, 'unpause')
-		add_child(dialog) 
+		add_child(dialog)
 		
 # Quando termina o dialogo
 func unpause(timeline_Primeirodialogo):
@@ -115,3 +117,7 @@ func _unhandled_input(event):
 		else:
 			_pause_menu.close()
 		get_tree().set_input_as_handled()
+
+
+func _on_sound_body_entered(body):
+	$Alarme.play()#ver com a celine

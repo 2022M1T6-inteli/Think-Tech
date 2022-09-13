@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	pass
+	$Sound_.play()
 
 #  Inicia o jogo.	
 func _on_startBtn_pressed() -> void:

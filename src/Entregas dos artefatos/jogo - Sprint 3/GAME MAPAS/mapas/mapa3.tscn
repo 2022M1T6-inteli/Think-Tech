@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (3).png" type="Texture" id=1]
 [ext_resource path="res://assents purple/assents purple (2)/asen/espin.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://GAME MAPAS/Scripts/plataforma2lent.gd" type="Script" id=11]
 [ext_resource path="res://GAME MAPAS/mapas/bau.tscn" type="PackedScene" id=12]
 [ext_resource path="res://GAME MAPAS/mapas/key.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Sounds/mixkit-we-own-the-night-roll-out-320.mp3" type="AudioStream" id=14]
 [ext_resource path="res://GAME MAPAS/TileItens/TileItensR.tres" type="TileSet" id=15]
 [ext_resource path="res://GAME MAPAS/Scripts/Reset_Level.gd" type="Script" id=16]
 [ext_resource path="res://GAME MAPAS/assents/1024x768-161892-pixel-art-pixelated-pixels-digital-art-space-black-background-universe-planet-stars-Moon-Mars.jpg" type="Texture" id=17]
@@ -345,5 +346,10 @@ position = Vector2( 133, 551 )
 
 [node name="Enemy2" parent="." instance=ExtResource( 19 )]
 position = Vector2( 325, 263 )
+
+[node name="Fundo_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 14 )
+volume_db = -10.0
+pitch_scale = 1.13
 
 [connection signal="body_entered" from="morte" to="." method="_on_morte_body_entered"]

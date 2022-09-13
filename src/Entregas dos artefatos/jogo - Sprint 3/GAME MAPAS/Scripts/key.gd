@@ -15,5 +15,5 @@ func _on_key_body_entered(body):
 		body.key = true
 		print("tudo certo")
 		Global.keyh += keyh
-		print(Global.keyh) 
+		print(Global.keyh)
 		queue_free()
