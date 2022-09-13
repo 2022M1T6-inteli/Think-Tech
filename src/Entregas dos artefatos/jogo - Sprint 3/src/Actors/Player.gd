@@ -20,6 +20,8 @@ var key: bool = false
 
 
 func _ready():
+	
+	
 	# Static types are necessary here to avoid warnings.
 	var camera: Camera2D = $Camera
 	if action_suffix == "_p1":
@@ -32,8 +34,18 @@ func _ready():
 		camera.custom_viewport = viewport
 		yield(get_tree(), "idle_frame")
 		camera.make_current()
+	
+	
+	
+	#checkpoint
 	if Checkpoint.check==1:
 		self.position=Vector2(415,204)
+		
+	
+	# 2° checkpoint
+	if Checkpoint.check==2:
+		self.position=Vector2(47,80)
+	
 
 
 

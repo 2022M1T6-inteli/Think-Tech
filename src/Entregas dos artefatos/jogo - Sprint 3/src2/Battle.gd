@@ -66,7 +66,8 @@ func _on_Run_pressed():
 	display_text("Got away safely!")
 	yield(self, "textbox_closed")
 	yield(get_tree().create_timer(0.25), "timeout")
-	get_tree().change_scene("res://primeiro dialogo.tscn") 
+	
+	get_tree().change_scene("res://primeiro dialogo.tscn") #caso aperte em run, volta pro primeiro dialogo
 
 func Attack():
 	
@@ -91,8 +92,17 @@ func Attack():
 		yield($AnimationPlayer, "animation_finished")
 		
 		yield(get_tree().create_timer(0.25), "timeout")
+		
+		#chekpoin
 		if(Checkpoint.check==1):
 			get_tree().change_scene("res://primeiro dialogo.tscn")
+			
+			
+			
+		# 2° checkpoint
+		if(Checkpoint.check==2):
+			get_tree().change_scene("res://GAME MAPAS/mapas/mapa1.tscn")
+	
 
 	enemy_turn()
 

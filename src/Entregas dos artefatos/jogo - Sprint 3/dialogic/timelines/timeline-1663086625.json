@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "2° fase"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1663086625.json",
+		"name": "2fase"
+	}
+}

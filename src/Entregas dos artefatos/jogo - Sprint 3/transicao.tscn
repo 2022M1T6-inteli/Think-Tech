@@ -23,7 +23,7 @@ texture = ExtResource( 2 )
 position = Vector2( 1.27529, 10.5117 )
 scale = Vector2( 0.187524, 0.164617 )
 frames = SubResource( 1 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="Timer" type="Timer" parent="."]

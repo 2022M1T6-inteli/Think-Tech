@@ -82,9 +82,9 @@ func _on_Area2D_body_entered(body):
 		
 # Quando termina o dialogo
 func unpause(timeline_Primeirodialogo):
+	Checkpoint.check=2
 	get_tree().paused = false # despausa o jogo
 	get_tree().change_scene("res://transicao.tscn")
-
 
 
 
