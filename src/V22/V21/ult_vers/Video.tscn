@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/art/background/VideoIntroducao.webm" type="VideoStream" id=1]
+[ext_resource path="res://Video.gd" type="Script" id=2]
+[ext_resource path="res://bbda26417528649.png" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+margin_right = 800.0
+margin_bottom = 480.0
+script = ExtResource( 2 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 880.0
+margin_bottom = 515.0
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.227451, 0.223529, 0.223529, 1 )
+margin_left = 14.0
+margin_top = 12.0
+margin_right = 181.0
+margin_bottom = 136.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+modulate = Color( 0.172549, 0.109804, 0.109804, 1 )
+margin_left = 16.0
+margin_top = 26.0
+margin_right = 150.0
+margin_bottom = 49.0
+text = "Para pular, pressione:"
+
+[node name="Bbda26417528649" type="Sprite" parent="ColorRect"]
+position = Vector2( 91, 66 )
+scale = Vector2( 0.134423, 0.111735 )
+texture = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="ColorRect"]
+wait_time = 5.0
+autostart = true
+
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]
+[connection signal="timeout" from="ColorRect/Timer" to="." method="_on_Timer_timeout"]
