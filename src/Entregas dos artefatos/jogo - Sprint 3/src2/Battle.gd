@@ -91,8 +91,7 @@ func Attack():
 		yield($AnimationPlayer, "animation_finished")
 		
 		yield(get_tree().create_timer(0.25), "timeout")
-		if(Checkpoint.check==1):
-			get_tree().change_scene("res://primeiro dialogo.tscn")
+		get_tree().change_scene(Checkpoint.lastScene)
 
 	enemy_turn()
 

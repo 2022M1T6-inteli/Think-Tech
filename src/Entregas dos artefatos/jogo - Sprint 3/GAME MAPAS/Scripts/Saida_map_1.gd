@@ -5,4 +5,4 @@ func _ready():
 	Global.keyh=0
 
 func _on_saida_mundo1_body_entered(body):
-	get_tree().change_scene("res://GAME MAPAS/mapas/mapa2.tscn")
+	get_tree().change_scene("res://GAME MAPAS/mapas/mapa3.tscn")

@@ -17,5 +17,5 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://src/Main/Game.tscn")
+	get_tree().change_scene("res://GAME MAPAS/mapas/mapa1.tscn")
 	pass # Replace with function body.

@@ -490,7 +490,7 @@ position = Vector2( 979, 562 )
 shape = SubResource( 15 )
 
 [node name="Player" parent="." instance=ExtResource( 11 )]
-position = Vector2( 28, 240 )
+position = Vector2( 245, 65 )
 
 [node name="HUD" parent="Player" instance=ExtResource( 17 )]
 offset = Vector2( -240.479, 0 )

@@ -88,11 +88,6 @@ _global_script_classes=[ {
 "class": "HistoryRow",
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
-}, {
-"base": "Actor",
-"class": "Player",
-"language": "GDScript",
-"path": "res://src/Actors/Player.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
@@ -110,8 +105,7 @@ _global_script_class_icons={
 "DialogicUtil": "",
 "Enemy": "",
 "Gun": "",
-"HistoryRow": "",
-"Player": ""
+"HistoryRow": ""
 }
 
 [application]
@@ -134,6 +128,7 @@ Checkpoint="*res://Checkpoint.gd"
 Questions="*res://Questions.gd"
 Global="*res://GAME MAPAS/Scripts/Global.gd"
 State="*res://src2/State.gd"
+Player="*res://src/Actors/Player.gd"
 
 [debug]
 

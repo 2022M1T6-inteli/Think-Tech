@@ -96,6 +96,7 @@ position = Vector2( 136, 60 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 layer = 100
+visible = false
 
 [node name="PauseMenu" parent="InterfaceLayer" instance=ExtResource( 8 )]
 

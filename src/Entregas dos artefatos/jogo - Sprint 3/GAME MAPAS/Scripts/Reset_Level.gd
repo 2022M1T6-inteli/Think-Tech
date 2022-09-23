@@ -8,6 +8,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Checkpoint.lastScene="res://GAME MAPAS/mapas/mapa3.tscn"
 	Global.fruits=0
 	Global.keyh=0
 

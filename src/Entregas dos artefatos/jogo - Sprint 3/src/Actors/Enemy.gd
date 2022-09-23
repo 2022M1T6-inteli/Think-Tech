@@ -87,4 +87,5 @@ func get_new_animation():
 func _on_Area2D_body_entered(body): # se ele tocar no enemy, ele vai pra cena do combate
 
 	if body.name == "Player":
+		Checkpoint.lastPosition=Player.position
 		get_tree().change_scene("res://src2/Battle.tscn")
