@@ -1,0 +1,441 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=1]
+[ext_resource path="res://src/UserInterface/PauseMenu.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/kenney_mini_square.tres" type="DynamicFontData" id=3]
+[ext_resource path="res://font/PressStart2P.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://src/UserInterface/CoinsCounter.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cards/cards.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Cards/Roadmap.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Cards/Vision.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Cards/BusinessKPI.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Cards/Backlog.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Cards/UserKPI.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Cards/Stakeholders.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Cards/Quality.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Cards/Deployment.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Cards/DataDriven.tscn" type="PackedScene" id=15]
+[ext_resource path="res://sprites/2630061.png" type="Texture" id=16]
+
+[sub_resource type="DynamicFont" id=1]
+size = 38
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://font/PressStart2P.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 17
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 12
+extra_spacing_top = 1
+extra_spacing_bottom = 3
+extra_spacing_space = -6
+font_data = ExtResource( 4 )
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.294118 )
+
+[node name="CenterContainer" type="CenterContainer" parent="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer"]
+margin_left = 191.0
+margin_top = 139.0
+margin_right = 609.0
+margin_bottom = 341.0
+rect_min_size = Vector2( 300, 200 )
+custom_constants/separation = 6
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+margin_right = 418.0
+margin_bottom = 38.0
+custom_fonts/font = SubResource( 1 )
+text = "Game Paused"
+align = 1
+valign = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect/CenterContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 418.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="ResumeButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
+margin_left = 119.0
+margin_top = 70.0
+margin_right = 299.0
+margin_bottom = 110.0
+rect_min_size = Vector2( 180, 40 )
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "Resume"
+
+[node name="CardsButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
+margin_left = 119.0
+margin_top = 116.0
+margin_right = 299.0
+margin_bottom = 156.0
+rect_min_size = Vector2( 180, 40 )
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "Cards"
+
+[node name="QuitButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
+margin_left = 119.0
+margin_top = 162.0
+margin_right = 299.0
+margin_bottom = 202.0
+rect_min_size = Vector2( 180, 40 )
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 4 )
+text = "Quit"
+
+[node name="CoinsCounter" parent="ColorRect" instance=ExtResource( 5 )]
+margin_right = 105.0
+margin_bottom = 50.0
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Cards" parent="." instance=ExtResource( 6 )]
+visible = false
+margin_left = -1.0
+margin_top = -2.0
+margin_right = -1.0
+margin_bottom = -2.0
+
+[node name="voltarMenu" type="Button" parent="Cards"]
+margin_left = 549.0
+margin_top = 1.0
+margin_right = 577.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Vision" type="Button" parent="Cards"]
+margin_left = 232.0
+margin_top = 91.0
+margin_right = 384.0
+margin_bottom = 131.0
+rect_scale = Vector2( 1, 0.5 )
+size_flags_horizontal = 5
+custom_fonts/font = SubResource( 6 )
+text = "Vision"
+
+[node name="ColorRect" type="ColorRect" parent="Cards/Vision"]
+visible = false
+margin_right = 152.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Vision/ColorRect"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Roadmap" type="Button" parent="Cards"]
+margin_left = 415.0
+margin_top = 90.0
+margin_right = 567.0
+margin_bottom = 130.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Roadmap"
+
+[node name="ColorRect2" type="ColorRect" parent="Cards/Roadmap"]
+visible = false
+margin_right = 152.0
+margin_bottom = 42.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Roadmap/ColorRect2"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Business" type="Button" parent="Cards"]
+margin_left = 416.0
+margin_top = 130.0
+margin_right = 568.0
+margin_bottom = 170.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Business"
+
+[node name="ColorRect3" type="ColorRect" parent="Cards/Business"]
+visible = false
+margin_right = 152.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Business/ColorRect3"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="User" type="Button" parent="Cards"]
+margin_left = 234.0
+margin_top = 130.0
+margin_right = 386.0
+margin_bottom = 170.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "User"
+
+[node name="ColorRect4" type="ColorRect" parent="Cards/User"]
+visible = false
+margin_right = 152.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/User/ColorRect4"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Backlog" type="Button" parent="Cards"]
+margin_left = 416.0
+margin_top = 169.0
+margin_right = 568.0
+margin_bottom = 209.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Backlog"
+
+[node name="ColorRect5" type="ColorRect" parent="Cards/Backlog"]
+visible = false
+margin_top = -2.0
+margin_right = 152.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Backlog/ColorRect5"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Stakeholder" type="Button" parent="Cards"]
+margin_left = 234.0
+margin_top = 169.0
+margin_right = 386.0
+margin_bottom = 209.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Stakeholders"
+
+[node name="ColorRect6" type="ColorRect" parent="Cards/Stakeholder"]
+visible = false
+margin_top = -2.0
+margin_right = 156.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Stakeholder/ColorRect6"]
+position = Vector2( 75, 18 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Deployment" type="Button" parent="Cards"]
+margin_left = 234.0
+margin_top = 208.0
+margin_right = 387.0
+margin_bottom = 246.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Deployment"
+
+[node name="ColorRect7" type="ColorRect" parent="Cards/Deployment"]
+visible = false
+margin_right = 153.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Deployment/ColorRect7"]
+position = Vector2( 74, 18 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Quality" type="Button" parent="Cards"]
+margin_left = 416.0
+margin_top = 207.0
+margin_right = 568.0
+margin_bottom = 247.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Quality"
+
+[node name="ColorRect8" type="ColorRect" parent="Cards/Quality"]
+visible = false
+margin_right = 152.0
+margin_bottom = 42.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/Quality/ColorRect8"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="DataDriven" type="Button" parent="Cards"]
+margin_left = 326.0
+margin_top = 247.0
+margin_right = 478.0
+margin_bottom = 287.0
+rect_scale = Vector2( 1, 0.5 )
+custom_fonts/font = SubResource( 6 )
+text = "Data Driven"
+
+[node name="ColorRect9" type="ColorRect" parent="Cards/DataDriven"]
+visible = false
+margin_right = 152.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0.309804 )
+
+[node name="Sprite" type="Sprite" parent="Cards/DataDriven/ColorRect9"]
+position = Vector2( 72.625, 19.25 )
+scale = Vector2( 0.0561524, 0.0810546 )
+texture = ExtResource( 16 )
+
+[node name="Vision" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[node name="voltarMenu3" type="Button" parent="Vision"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Roadmap" parent="." instance=ExtResource( 7 )]
+visible = false
+
+[node name="voltarMenu2" type="Button" parent="Roadmap"]
+margin_left = 632.0
+margin_top = 7.0
+margin_right = 660.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Business" parent="." instance=ExtResource( 9 )]
+visible = false
+
+[node name="voltarMenu4" type="Button" parent="Business"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="User" parent="." instance=ExtResource( 11 )]
+visible = false
+
+[node name="voltarMenu5" type="Button" parent="User"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Backlog" parent="." instance=ExtResource( 10 )]
+visible = false
+
+[node name="voltarMenu6" type="Button" parent="Backlog"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Stakeholder" parent="." instance=ExtResource( 12 )]
+visible = false
+
+[node name="voltarMenu7" type="Button" parent="Stakeholder"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Deployment" parent="." instance=ExtResource( 14 )]
+visible = false
+
+[node name="voltarMenu8" type="Button" parent="Deployment"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="Quality" parent="." instance=ExtResource( 13 )]
+visible = false
+
+[node name="voltarMenu9" type="Button" parent="Quality"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[node name="DataDriven" parent="." instance=ExtResource( 15 )]
+visible = false
+
+[node name="voltarMenu10" type="Button" parent="DataDriven"]
+margin_left = 637.0
+margin_top = 21.0
+margin_right = 665.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 5 )
+text = "X"
+
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_ResumeButton_pressed"]
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/CardsButton" to="." method="_on_CardsButton_pressed"]
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
+[connection signal="pressed" from="Cards/voltarMenu" to="." method="_on_voltarMenu_pressed"]
+[connection signal="pressed" from="Cards/Vision" to="." method="_on_Vision_pressed"]
+[connection signal="pressed" from="Cards/Roadmap" to="." method="_on_Roadmap_pressed"]
+[connection signal="pressed" from="Cards/Business" to="." method="_on_Business_pressed"]
+[connection signal="pressed" from="Cards/User" to="." method="_on_User_pressed"]
+[connection signal="pressed" from="Cards/Backlog" to="." method="_on_Backlog_pressed"]
+[connection signal="pressed" from="Cards/Stakeholder" to="." method="_on_Stakeholder_pressed"]
+[connection signal="pressed" from="Cards/Deployment" to="." method="_on_Deployment_pressed"]
+[connection signal="pressed" from="Cards/Quality" to="." method="_on_Quality_pressed"]
+[connection signal="pressed" from="Cards/DataDriven" to="." method="_on_DataDriven_pressed"]
+[connection signal="pressed" from="Vision/voltarMenu3" to="." method="_on_voltarMenu3_pressed"]
+[connection signal="pressed" from="Roadmap/voltarMenu2" to="." method="_on_voltarMenu2_pressed"]
+[connection signal="pressed" from="Business/voltarMenu4" to="." method="_on_voltarMenu4_pressed"]
+[connection signal="pressed" from="User/voltarMenu5" to="." method="_on_voltarMenu5_pressed"]
+[connection signal="pressed" from="Backlog/voltarMenu6" to="." method="_on_voltarMenu6_pressed"]
+[connection signal="pressed" from="Stakeholder/voltarMenu7" to="." method="_on_voltarMenu7_pressed"]
+[connection signal="pressed" from="Deployment/voltarMenu8" to="." method="_on_voltarMenu8_pressed"]
+[connection signal="pressed" from="Quality/voltarMenu9" to="." method="_on_voltarMenu9_pressed"]
+[connection signal="pressed" from="DataDriven/voltarMenu10" to="." method="_on_voltarMenu10_pressed"]
