@@ -23,7 +23,7 @@
 <br><br>
 📜 A Dell Digital Global está passando por uma transição no modelo atual de desenvolvimento de software com foco no Modelo de Produtos. Como esse modelo é novo no mercado, há pouca referência, cursos ou treinamentos disponíveis. Por isso, nosso objetivo é desenvolver um jogo que auxilie os colaboradores da Dell nesse processo de transição.
 <br><br>
-📜 Nossa proposta é o desenvolvimento de um jogo no qual os jogadores receberão informações sobre o modelo de Produto durante as fases e no decorrer das fases também terá uma dinâmica de combate, onde os usuários terão que responder quizzes para ganhar. 
+📜 Nossa proposta é o desenvolvimento de um jogo no qual os jogadores desbloquearão cards sobre o modelo de Produto durante as fases e no decorrer das fases também terá uma dinâmica de combate, onde os usuários terão que responder quizzes para ganhar. 
 <br>
 
 <p align="center">
