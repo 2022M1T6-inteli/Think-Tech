@@ -40,6 +40,8 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 
 - <b>readme.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
+- <b>documentos</b>:Aqui serão colocados os arquivos compilados em HTML do jogo.</b>.
+
 - <b>documentos</b>: aqui estarão todos os documentos do projeto. Há também uma pasta denominada <b>outros</b> onde estão presentes aqueles documentos complementares ao <b>web application document</b>.
 
 - <b>imagens</b>: imagens relacionadas ao projeto como um todo (por exemplo imagens do sistema, do grupo, logotipos e afins).
@@ -48,22 +50,10 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 
 ## 💻 Configuração para desenvolvimento
 
-Aqui encontram-se todas as instruções necessárias para a instalação de todos os programas, bibliotecas e ferramentas imprescindíveis para a configuração do ambiente de desenvolvimento.
+1 - Faça o download do GODOT e deste repositório. 2 - Abra o GODOT, ao ser prontificado clique em IMPORTAR. 3 - Selecione a pasta onde descompactou este repositório.
 
-1.  Baixar e instalar o node.js:  [https://nodejs.org/pt-br/](https://nodejs.org/pt-br/) (versão 16.15.1 LTS)
-2. Clone o repositório em questão.
-3.  No modo administrador, abra o "prompt de comando" ou o "terminal" e, após,  abra a pasta "src/backend" no diretório raiz do repositório clonado e digite o segundo comando:
-
-```sh
-npm install
-```
-
-Isso instalará todas as dependências definidas no arquivo <b>package.json</b> que são necessárias para rodar o projeto. Agora o projeto já está pronto para ser modificado. Caso ainda deseje iniciar a aplicação, digite o comando abaixo no terminal:
-
-```sh
-npm start
-```
-5. Pronto. O servidor está online.
+Para abrir este projeto você necessita das seguintes ferramentas:
+- <a href="https://godotengine.org/download/windows/">GODOT</a>
 
 ## 🗃 Histórico de lançamentos
 
