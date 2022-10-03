@@ -1,0 +1,35 @@
+{
+	"events": [
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Sounds/nuclear-alarm-6997.mp3",
+			"volume": -15
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haha. I finally caught you INVADER! "
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm not an invader, I'm just a galaxy hitchhiker who dreams to become a Dev to Dellstar. I was on my way to meet Ada but my rocket broke down in this planet..."
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you really want to become a Dev to the biggest empire in the galaxy, then you need to learn about the Nine Dimensions of the New Modell. Only then you will be ready to be face to face with the Queen, No Worries, I was once in your shoes and now I am here to help you. "
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1661366282.json",
+		"name": "eng_adoy1"
+	}
+}

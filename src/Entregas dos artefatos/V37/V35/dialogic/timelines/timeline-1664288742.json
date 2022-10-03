@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Planet 1..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664288742.json",
+		"name": "Instrucao3_eng"
+	}
+}
