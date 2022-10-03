@@ -15,6 +15,8 @@ extends Control
 #	pass
 func _ready():
 	$ColorRect.show()
+	if !MusicGlobal.is_playing: # A música do mapa1 começa a tocar
+		MusicGlobal.play_music0()
 
 func _on_VideoPlayer_finished():
 	get_tree().change_scene("res://Mapamundi/0-transiçao.tscn")

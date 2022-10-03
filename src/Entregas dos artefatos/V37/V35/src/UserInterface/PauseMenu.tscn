@@ -184,7 +184,7 @@ margin_right = 386.0
 margin_bottom = 236.0
 rect_scale = Vector2( 1, 0.5 )
 custom_fonts/font = SubResource( 6 )
-text = "User"
+text = "Backlog"
 
 [node name="Roadmap" type="Button" parent="Cards"]
 modulate = Color( 0, 0.843137, 1, 1 )
@@ -204,7 +204,7 @@ margin_right = 568.0
 margin_bottom = 236.0
 rect_scale = Vector2( 1, 0.5 )
 custom_fonts/font = SubResource( 6 )
-text = "Business"
+text = "Stakeholder"
 
 [node name="Backlog" type="Button" parent="Cards"]
 modulate = Color( 0, 0.843137, 1, 1 )
@@ -214,7 +214,7 @@ margin_right = 568.0
 margin_bottom = 275.0
 rect_scale = Vector2( 1, 0.5 )
 custom_fonts/font = SubResource( 6 )
-text = "Backlog"
+text = "User"
 
 [node name="Stakeholder" type="Button" parent="Cards"]
 modulate = Color( 0, 0.843137, 1, 1 )
@@ -224,7 +224,7 @@ margin_right = 386.0
 margin_bottom = 275.0
 rect_scale = Vector2( 1, 0.5 )
 custom_fonts/font = SubResource( 6 )
-text = "Stakeholder"
+text = "Business"
 
 [node name="Deployment" type="Button" parent="Cards"]
 modulate = Color( 0, 0.843137, 1, 1 )

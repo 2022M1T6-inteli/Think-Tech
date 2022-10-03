@@ -14,6 +14,7 @@ func _init():
 	OS.min_window_size = OS.window_size
 	OS.max_window_size = OS.get_screen_size()
 func _ready():
+	#MusicGlobal.play_music7()
 	Checkpoint.enemy=Checkpoint.enemy3
 	if(Checkpoint.dimension==0):
 		questions=Questions.ListaQDim0
