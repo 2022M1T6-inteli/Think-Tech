@@ -15,7 +15,9 @@ func _init():
 	OS.max_window_size = OS.get_screen_size()
 func _ready():
 	#MusicGlobal.play_music7()
+	
 	Checkpoint.enemy=Checkpoint.enemy3
+	"""
 	if(Checkpoint.dimension==0):
 		questions=Questions.ListaQDim0
 		alternatives=Questions.ListaADim0
@@ -25,6 +27,10 @@ func _ready():
 	elif(Checkpoint.dimension==2):
 		questions=Questions.ListaQDim2
 		alternatives=Questions.ListaADim2
+	"""
+	questions=Questions.ListaQDim1_2
+	alternatives=Questions.ListaADim1_2
+	
 	set_health($EnemyContainer/ProgressBar, Checkpoint.enemy.health, Checkpoint.enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, State.current_health, State.max_health)
 	$EnemyContainer/Enemy.texture = Checkpoint.enemy.texture
