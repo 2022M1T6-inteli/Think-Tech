@@ -5,6 +5,12 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Wow! The gate is closed. I think I'll have to hack the system to open the way!"
+		},
+		{
+			"character": "character-1663787075.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You will now go to the combat screen. To attack the enemy press attack. Answer the questions to do damage."
 		}
 	],
 	"metadata": {

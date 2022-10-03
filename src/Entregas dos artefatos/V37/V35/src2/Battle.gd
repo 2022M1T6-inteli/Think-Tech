@@ -16,7 +16,7 @@ func _init():
 func _ready():
 	#MusicGlobal.play_music7()
 	
-	Checkpoint.enemy=Checkpoint.enemy3
+	Checkpoint.enemy=Checkpoint.enemy1
 	"""
 	if(Checkpoint.dimension==0):
 		questions=Questions.ListaQDim0
