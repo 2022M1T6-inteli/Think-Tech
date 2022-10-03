@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mixkit-deep-urban-623.mp3-25a97a38d6a993adc58d65f8a241139b.mp3str"
+
+[deps]
+
+source_file="res://Sounds/mixkit-deep-urban-623.mp3"
+dest_files=[ "res://.import/mixkit-deep-urban-623.mp3-25a97a38d6a993adc58d65f8a241139b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

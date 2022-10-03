@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://TeladosMapas.gd" type="Script" id=1]
+[ext_resource path="res://font/PressStart2P.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Mapamundi/planeta2.png" type="Texture" id=3]
+[ext_resource path="res://Mapamundi/DELL SPACE COMPLETE.png" type="Texture" id=4]
+[ext_resource path="res://Mapamundi/planeta tutorial.png" type="Texture" id=5]
+[ext_resource path="res://Mapamundi/terra plana.png" type="Texture" id=6]
+[ext_resource path="res://Mapamundi/planeta3.png" type="Texture" id=7]
+[ext_resource path="res://Mapamundi/planeta1.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 9
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="DellSpaceComplete" type="Sprite" parent="."]
+position = Vector2( 401.5, 231.5 )
+scale = Vector2( 0.782227, 0.778333 )
+texture = ExtResource( 4 )
+
+[node name="PlanetaTutorial" type="Sprite" parent="."]
+position = Vector2( 105, 143 )
+scale = Vector2( 0.65, 0.65 )
+texture = ExtResource( 5 )
+
+[node name="Planeta3" type="Sprite" parent="PlanetaTutorial"]
+position = Vector2( 1.62525, 298.548 )
+scale = Vector2( 1.17359, 1.17231 )
+texture = ExtResource( 7 )
+
+[node name="Planeta1" type="Sprite" parent="PlanetaTutorial"]
+position = Vector2( 446.154, 298.462 )
+scale = Vector2( 1.17545, 1.16845 )
+texture = ExtResource( 8 )
+
+[node name="Planeta2" type="Sprite" parent="PlanetaTutorial"]
+position = Vector2( 421.538, 140 )
+scale = Vector2( 1.2407, 1.25874 )
+texture = ExtResource( 3 )
+
+[node name="TerraPlana" type="Sprite" parent="PlanetaTutorial"]
+position = Vector2( 446.154, 10.7692 )
+scale = Vector2( 1.26796, 1.41538 )
+texture = ExtResource( 6 )
+
+[node name="Tutorial" type="Button" parent="."]
+margin_left = 64.0
+margin_top = 181.0
+margin_right = 148.0
+margin_bottom = 203.0
+custom_fonts/font = SubResource( 1 )
+text = "Tutorial"
+
+[node name="Fase1" type="Button" parent="."]
+margin_left = 61.0
+margin_top = 383.0
+margin_right = 145.0
+margin_bottom = 405.0
+custom_fonts/font = SubResource( 1 )
+text = "Fase 1"
+
+[node name="Fase2" type="Button" parent="."]
+margin_left = 351.0
+margin_top = 383.0
+margin_right = 435.0
+margin_bottom = 405.0
+custom_fonts/font = SubResource( 1 )
+text = "Fase 2"
+
+[node name="Fase3" type="Button" parent="."]
+margin_left = 338.0
+margin_top = 278.0
+margin_right = 422.0
+margin_bottom = 300.0
+custom_fonts/font = SubResource( 1 )
+text = "Fase 3"
+
+[node name="Fase4" type="Button" parent="."]
+margin_left = 348.0
+margin_top = 173.0
+margin_right = 432.0
+margin_bottom = 195.0
+custom_fonts/font = SubResource( 1 )
+text = "Fase 4"
+
+[connection signal="pressed" from="Tutorial" to="." method="_on_Tutorial_pressed"]
+[connection signal="pressed" from="Fase1" to="." method="_on_Fase1_pressed"]
+[connection signal="pressed" from="Fase2" to="." method="_on_Fase2_pressed"]
+[connection signal="pressed" from="Fase3" to="." method="_on_Fase3_pressed"]
+[connection signal="pressed" from="Fase4" to="." method="_on_Fase4_pressed"]

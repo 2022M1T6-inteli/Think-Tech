@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"character": "character-1663787075.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welcome! Press 'Enter' to continue a dialogue."
+		},
+		{
+			"character": "character-1663787075.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press the keys ' W ' or 'UI_UP' to jump,  'A'  or 'IU_LEFT'  to move to the left and 'D' or 'UI_RIGHT' to move to the right."
+		},
+		{
+			"character": "character-1663787075.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To pause the game press 'ESC'."
+		},
+		{
+			"character": "character-1663787075.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Collect five coins in order to unlock your first card deck!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1663791331.json",
+		"name": "Instrucao1"
+	}
+}
