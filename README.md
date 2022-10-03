@@ -41,7 +41,7 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 
 - <b>readme.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-- <b>docs</b>:Aqui serão colocados os arquivos compilados em HTML do jogo.</b>.
+- <b>docs</b>:Aqui serão colocados os arquivos compilados em HTML do jogo.</b>
 
 - <b>documentos</b>: aqui estarão todos os documentos do projeto. Há também uma pasta denominada <b>outros</b> onde estão presentes aqueles documentos complementares ao <b>web application document</b>.
 
