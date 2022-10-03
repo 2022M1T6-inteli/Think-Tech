@@ -58,21 +58,29 @@ func _on_Area2D2_body_entered(body):
 
 	if body.name == "Player": # Identifica que o player entrou
 		get_tree().paused = true # Pausa a tela
-		
-		var dialog = Dialogic.start("eng_dialogcombat") # A variável recebe a timeline do dialogocombate
 
-		dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
-		dialog.connect('timeline_end', self, 'notpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
-		add_child(dialog) # Adiciona um nó chamado dialog
+		if Global.lang==1:
+			var dialog = Dialogic.start("eng_dialogcombat") # A variável recebe a timeline do dialogocombate
+
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
+			dialog.connect('timeline_end', self, 'notpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+		if Global.lang==2:
+			var dialog = Dialogic.start("port_dialogcombat") # A variável recebe a timeline do dialogocombate
+
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
+			dialog.connect('timeline_end', self, 'port_notpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
 
 # Fim do diálogo que vai para a cena do combate
-func notpause(timeline_dialogocombate):
+func notpause(timeline_eng_dialogcombate):
 	$Area2D2/CollisionShape2D.disabled=true # Desativa a colisão area2d (a que ativa o diálogo)
 	$StaticBody2D.hide() # Oculta a grade que bloqueia o caminho
 	$StaticBody2D/CollisionShape2D.disabled=true # Desativa a colisão da grade
-	
+
 	get_tree().paused = false # Despausa o jogo
-	
+
 	#Checkpoint é chamado, pois o player vai para o combate e quando ele volta, tem que voltar para a cena e posição em que estava quando foi para a cena de combate 
 	Checkpoint.packed_scene2.pack(get_tree().get_current_scene())
 	ResourceSaver.save("res://my_scene2.tscn", Checkpoint.packed_scene2) # Salva a cena
@@ -80,7 +88,20 @@ func notpause(timeline_dialogocombate):
 	#Chama a cena de combate
 	get_tree().change_scene("res://src2/Battle.tscn") 
 
-	
+# Fim do diálogo que vai para a cena do combate
+func port_notpause(timeline_port_dialogcombate):
+	$Area2D2/CollisionShape2D.disabled=true # Desativa a colisão area2d (a que ativa o diálogo)
+	$StaticBody2D.hide() # Oculta a grade que bloqueia o caminho
+	$StaticBody2D/CollisionShape2D.disabled=true # Desativa a colisão da grade
+
+	get_tree().paused = false # Despausa o jogo
+
+	#Checkpoint é chamado, pois o player vai para o combate e quando ele volta, tem que voltar para a cena e posição em que estava quando foi para a cena de combate 
+	Checkpoint.packed_scene2.pack(get_tree().get_current_scene())
+	ResourceSaver.save("res://my_scene2.tscn", Checkpoint.packed_scene2) # Salva a cena
+	Checkpoint.coinsSaved=Checkpoint.coinsCollected
+	#Chama a cena de combate
+	get_tree().change_scene("res://src2/Battle.tscn") 
 
 
 # Início do diálogo com o Adoy
@@ -89,15 +110,31 @@ func _on_Area2D_body_entered(body):
 	if body.name == "Player": # Identifica que o player entrou
 		get_tree().paused = true # Pausa a tela
 		$Area2D/prison.show() # A prisão fica visível 
-		
-		var dialog = Dialogic.start("eng_adoy1") # A variável recebe a timeline Primeirodialogo
+
+		if Global.lang==1:
+			var dialog = Dialogic.start("eng_adoy1") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'unpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+		if Global.lang==2:
+			var dialog = Dialogic.start("port_adoy1") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'port_unpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+func unpause(timeline_eng_adoy1):
+	get_tree().paused = false # Despausa o jogo
 	
-		dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
-		dialog.connect('timeline_end', self, 'unpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
-		add_child(dialog) # Adiciona um nó chamado dialog
+	yield(get_tree().create_timer(0.3), "timeout") 
+	
+	Checkpoint.coinsSaved=Checkpoint.coinsCollected # Checkpoint é chamado
+	
+	get_tree().change_scene("res://Mapamundi/mapaMundi.tscn") # Chama a cena da constelação
+	
+	MusicGlobal.stop_music() # Para a música
 
-
-func unpause(timeline_Primeirodialogo):
+func port_unpause(timeline_port_adoy1):
 	get_tree().paused = false # Despausa o jogo
 	
 	yield(get_tree().create_timer(0.3), "timeout") 
