@@ -29,15 +29,10 @@
 <p align="center">
 
 ## 🛠 Estrutura de pastas
-
+|-->docs>
 |--> documentos<br>
-  &emsp;| --> outros <br>
-  &emsp;| T4_G5_Web_application_document.docx<br>
-  &emsp;| T4_G5_Web_application_document.pdf<br>
 |--> imagens<br>
 |--> src<br>
-  &emsp;|--> Backend<br>
-  &emsp;|--> Frontend<br>
 | readme.md<br>
 | license.txt
 
