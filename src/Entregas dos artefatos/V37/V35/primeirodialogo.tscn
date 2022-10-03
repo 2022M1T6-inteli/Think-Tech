@@ -260,6 +260,36 @@ position = Vector2( 188, 39 )
 position = Vector2( 36.5, -43 )
 shape = SubResource( 7 )
 
+[node name="Coin6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 707, 23 )
+
+[node name="Coin7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 756, 50 )
+
+[node name="Coin8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 807, 23 )
+
+[node name="Coin9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 845, 53 )
+
+[node name="Coin10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 909, 53 )
+
+[node name="Coin11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 962, 98 )
+
+[node name="Coin12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 963, 228 )
+
+[node name="Coin13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 888, 230 )
+
+[node name="Coin14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 805, 192 )
+
+[node name="Coin15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 721, 228 )
+
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="instrucao1" to="." method="_on_instrucao1_body_entered"]

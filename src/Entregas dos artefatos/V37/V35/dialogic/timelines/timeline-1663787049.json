@@ -10,7 +10,7 @@
 			"character": "character-1664810111.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Pressione as teclas ' W ' ou 'UI_UP' para pular, 'A' ou 'IU_LEFT' para mover para a esquerda e 'D' ou 'UI_RIGHT' para mover para a direita."
+			"text": "Pressione as teclas ' W ' ou 'seta p/cima' para pular, 'A' ou 'seta p/esquerda' para mover para a esquerda e 'D' ou 'seta p/direita' para mover para a direita."
 		},
 		{
 			"character": "character-1664810111.json",

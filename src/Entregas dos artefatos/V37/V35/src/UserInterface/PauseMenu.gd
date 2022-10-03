@@ -21,28 +21,28 @@ func _process(delta): #Aqui é a sessão de desbloquear os cards
 	if Checkpoint.coinsCollected>=10:
 		$Cards/bloqueio1.hide()
 	
-	if Checkpoint.coinsCollected>=20:
+	if Checkpoint.coinsCollected>=15:
 		$Cards/bloqueio2.hide()
 
-	if Checkpoint.coinsCollected>=30:
+	if Checkpoint.coinsCollected>=20:
 		$Cards/bloqueio3.hide()
 
-	if Checkpoint.coinsCollected>=40:
+	if Checkpoint.coinsCollected>=25:
 		$Cards/bloqueio4.hide()
 
-	if Checkpoint.coinsCollected>=50:
+	if Checkpoint.coinsCollected>=30:
 		$Cards/bloqueio5.hide()
 	
-	if Checkpoint.coinsCollected>=60:
+	if Checkpoint.coinsCollected>=35:
 		$Cards/bloqueio6.hide()
 
-	if Checkpoint.coinsCollected>=70:
+	if Checkpoint.coinsCollected>=40:
 		$Cards/bloqueio7.hide()
 
-	if Checkpoint.coinsCollected>=80:
+	if Checkpoint.coinsCollected>=45:
 		$Cards/bloqueio8.hide()
 
-	if Checkpoint.coinsCollected>=90:
+	if Checkpoint.coinsCollected>=50:
 		$Cards/bloqueio9.hide()
 
 func close():
