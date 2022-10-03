@@ -29,7 +29,8 @@
 <p align="center">
 
 ## 🛠 Estrutura de pastas
-|-->docs>
+
+|--> docs<br>
 |--> documentos<br>
 |--> imagens<br>
 |--> src<br>
