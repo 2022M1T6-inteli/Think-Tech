@@ -1,0 +1,148 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://assets/art/tileset/tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://MUSIC/toby fox - UNDERTALE Soundtrack - 23 Shop.mp3" type="AudioStream" id=2]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=4]
+[ext_resource path="res://src/UserInterface/PauseMenu.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Level/ParallaxBackground.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Objects/Coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://primeirodialogo.gd" type="Script" id=8]
+[ext_resource path="res://src/Actors/Player.gd" type="Script" id=9]
+[ext_resource path="res://pixil-frame-0 (1).png" type="Texture" id=10]
+[ext_resource path="res://src/Objects/Coin.gd" type="Script" id=11]
+[ext_resource path="res://src/UserInterface/PauseMenu.gd" type="Script" id=12]
+[ext_resource path="res://sprites tempora/pngwing.com.png" type="Texture" id=13]
+[ext_resource path="res://sprites tempora/porta elevador.png" type="Texture" id=14]
+[ext_resource path="res://sprites tempora/mesa_recep.png" type="Texture" id=15]
+[ext_resource path="res://Sounds/mixkit-space-game-668.mp3" type="AudioStream" id=16]
+[ext_resource path="res://sprites-temporarios/3 Objects/Ladder1.png" type="Texture" id=17]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 17.5, 5.76564 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 120, 1.125 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 33.75, 35 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -262144, 0, 0, -262096, 0, 0, -131072, 10, 0, -131024, 10, 0, 0, 7, 0, 48, 7, 0, 65536, 7, 0, 65584, 7, 0, 131072, 7, 0, 131120, 7, 0, 196608, 7, 0, 196656, 7, 0, 262144, 7, 0, 262192, 7, 0, 327680, 7, 0, 327682, 0, 0, 327684, 0, 0, 327686, 0, 0, 327688, 0, 0, 327690, 0, 0, 327692, 0, 0, 327694, 0, 0, 327696, 0, 0, 327698, 0, 0, 327700, 0, 0, 327702, 0, 0, 327704, 0, 0, 327706, 0, 0, 327708, 0, 0, 327710, 0, 0, 327712, 0, 0, 327714, 0, 0, 327716, 0, 0, 327728, 7, 0, 393216, 7, 0, 393256, 6, 0, 393264, 7, 0, 458752, 7, 0, 458754, 10, 0, 458756, 10, 0, 458758, 10, 0, 458760, 10, 0, 458762, 7, 0, 458764, 7, 0, 458766, 7, 0, 458768, 7, 0, 458770, 7, 0, 458772, 7, 0, 458774, 7, 0, 458776, 7, 0, 458778, 7, 0, 458780, 7, 0, 458782, 7, 0, 458784, 7, 0, 458786, 7, 0, 458788, 7, 0, 458800, 7, 0, 524333, 6, 0, 524336, 7, 0, 589824, 7, 0, 589872, 7, 0, 655408, 7, 0, 720896, 7, 0, 720938, 6, 0, 720944, 7, 0, 786432, 7, 0, 786480, 7, 0, 851968, 7, 0, 852006, 6, 0, 852016, 7, 0, 917504, 7, 0, 917552, 7, 0, 983040, 7, 0, 983088, 7, 0, 1048576, 7, 0, 1048578, 7, 0, 1048580, 7, 0, 1048584, 7, 0, 1048586, 7, 0, 1048588, 7, 0, 1048590, 7, 0, 1048592, 7, 0, 1048594, 7, 0, 1048596, 7, 0, 1048598, 7, 0, 1048600, 7, 0, 1048602, 7, 0, 1048603, 7, 0, 1048605, 7, 0, 1048607, 7, 0, 1048609, 7, 0, 1048611, 7, 0, 1048613, 7, 0, 1048614, 7, 0, 1048616, 7, 0, 1048618, 7, 0, 1048620, 7, 0, 1048622, 7, 0, 1048624, 7, 0, 1114112, 7, 0, 1114160, 7, 0, 1179648, 7, 0, 1179696, 7, 0, 1245184, 7, 0, 1310720, 7, 0, 1310768, 7, 0, 1376256, 7, 0, 1376304, 7, 0, 1441792, 7, 0, 1441840, 7, 0, 1507328, 7, 0, 1507376, 7, 0, 1572864, 7, 0, 1572866, 7, 0, 1572868, 7, 0, 1572870, 7, 0, 1572872, 7, 0, 1572874, 7, 0, 1572876, 7, 0, 1572878, 7, 0, 1572880, 7, 0, 1572882, 7, 0, 1572884, 7, 0, 1572886, 7, 0, 1572888, 7, 0, 1572890, 7, 0, 1572892, 7, 0, 1572894, 7, 0, 1572896, 7, 0, 1572898, 7, 0, 1572900, 7, 0, 1572902, 7, 0, 1572904, 7, 0, 1572906, 7, 0, 1572908, 7, 0, 1572910, 7, 0, 1572912, 7, 0 )
+
+[node name="Pngwingcom" type="Sprite" parent="."]
+position = Vector2( 74, 40 )
+rotation = -0.00439158
+scale = Vector2( 0.150028, 0.196089 )
+texture = ExtResource( 13 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( -12, -2 )
+rotation = 0.114643
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Area2D2"]
+position = Vector2( 388.794, 211.916 )
+rotation = -0.114643
+scale = Vector2( 0.71875, 0.666667 )
+texture = ExtResource( 15 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 426.557, 203.305 )
+rotation = -0.114643
+shape = SubResource( 2 )
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 7, -37 )
+
+[node name="adoy" type="Sprite" parent="Area2D"]
+position = Vector2( 288, 373 )
+texture = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 146, 420 )
+shape = SubResource( 1 )
+
+[node name="prison" type="Sprite" parent="Area2D"]
+visible = false
+
+[node name="Ladder1" type="Sprite" parent="Area2D/prison"]
+position = Vector2( 35, 401.5 )
+scale = Vector2( 0.375, 1.21875 )
+texture = ExtResource( 17 )
+
+[node name="Ladder2" type="Sprite" parent="Area2D/prison"]
+position = Vector2( 177, 401 )
+scale = Vector2( 0.375, 1.21875 )
+texture = ExtResource( 17 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+position = Vector2( 32, -1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 225, 213 )
+scale = Vector2( 0.75, 0.671875 )
+texture = ExtResource( 14 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 224, 219 )
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Player" type="KinematicBody2D" parent="." groups=["Player_"] instance=ExtResource( 3 )]
+position = Vector2( 413.075, 255.924 )
+collision_layer = 5121
+collision_mask = 5150
+script = ExtResource( 9 )
+speed = Vector2( 150, 350 )
+action_suffix = ""
+
+[node name="InterfaceLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="PauseMenu" type="Control" parent="InterfaceLayer" instance=ExtResource( 5 )]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+script = ExtResource( 12 )
+_start_position = Vector2( 0, -20 )
+_end_position = Vector2( 0, 0 )
+fade_in_duration = 0.3
+fade_out_duration = 0.2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." instance=ExtResource( 6 )]
+scroll_offset = Vector2( -426.15, -241.848 )
+scroll_base_scale = Vector2( 0.4, 0 )
+
+[node name="Music_fundo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 16 )
+volume_db = -5.0
+
+[node name="Coin2" type="Area2D" parent="." instance=ExtResource( 7 )]
+position = Vector2( 265, 58 )
+collision_layer = 0
+monitorable = false
+script = ExtResource( 11 )
+
+[node name="fundo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+volume_db = -5.0
+
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Coin2" to="Coin2" method="_on_body_entered"]
