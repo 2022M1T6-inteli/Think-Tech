@@ -4,18 +4,18 @@
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Aqui é o planeta Backlog. Neste planeta você irá entender como nossos funcionários compreendem cada desafio que aparece."
+			"text": "This is Planet Backlog. On this planet you will understand how our employees understand every challenge that comes their way"
 		},
 		{
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Explore essa dimensão com cautela, pois o caminho só fica mais desafiador."
+			"text": "Explore this dimension with caution, as the path only gets more challenging."
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.4",
 		"file": "timeline-1664290183.json",
-		"name": "Instrucao5_eng"
+		"name": "map3_eng"
 	}
 }

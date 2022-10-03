@@ -4,18 +4,18 @@
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "On this first planet you will learn about one of Dell Star's core values: Vision"
+			"text": "Você chegou ao planeta Roadmap. Aqui você irá entender como alinhamos os nossos objetivos. "
 		},
 		{
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Explore this planet, learn more about our system and get closer to your goal."
+			"text": "Explore o planeta e tenha cuidado com os desafior."
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.4",
-		"file": "timeline-1664288742.json",
-		"name": "map1_eng"
+		"file": "timeline-1664813603.json",
+		"name": "map2_port"
 	}
 }

@@ -47,13 +47,27 @@ func _unhandled_input(event):
 func _on_Instrucao_body_entered(body):
 	get_tree().paused = true # Pausa o jogo
 	
-	var dialog = Dialogic.start("Instrucao5_eng") # A variável recebe a timeline Instrução1
 	
-	dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
-	dialog.connect('timeline_end', self, 'continua5') # # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
-	add_child(dialog) 
+	if Global.lang==1:
+		var dialog = Dialogic.start("map3_eng") # A variável recebe a timeline Instrução1
 
-func continua5(timeline_Instrucao5_eng):
+		dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
+		dialog.connect('timeline_end', self, 'continua5') # # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+		add_child(dialog) 
+
+	if Global.lang==2:
+		var dialog = Dialogic.start("map3_port") # A variável recebe a timeline Instrução1
+
+		dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
+		dialog.connect('timeline_end', self, 'continua5_port') # # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+		add_child(dialog) 
+
+
+func continua5(timeline_map3_eng):
+	get_tree().paused = false # Despausa o jogo
+	$Instrucao/CollisionShape2D.disabled = true # Desativa a colisão da area2d (a que ativa a instrução)
+
+func continua5_port(timeline_map3_port):
 	get_tree().paused = false # Despausa o jogo
 	$Instrucao/CollisionShape2D.disabled = true # Desativa a colisão da area2d (a que ativa a instrução)
 

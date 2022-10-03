@@ -106,13 +106,26 @@ func _unhandled_input(event): # Aqui programamos as funções de duas teclas def
 func _on_instrucao_body_entered(body): #Area2d que aciona uma caixa de diálogo com instruções do adoy 
 	get_tree().paused = true # Pausa o jogo
 	
-	var dialog = Dialogic.start("Instrucao3_eng") # A variável recebe a timeline Instrução1
 	
-	dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
-	dialog.connect('timeline_end', self, 'continua3') # # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
-	add_child(dialog) 
+	if Global.lang==1:
+		var dialog = Dialogic.start("map1_eng") # A variável recebe a timeline Instrução1
+
+		dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
+		dialog.connect('timeline_end', self, 'continua3') # # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+		add_child(dialog) 
+
+	if Global.lang==2:
+		var dialog = Dialogic.start("map1_port") # A variável recebe a timeline Instrução1
+
+		dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Pausado ou não, este nó será processado.
+		dialog.connect('timeline_end', self, 'continua3_port') # # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+		add_child(dialog) 
 
 
-func continua3(timeline_Instrucao3_eng):
+func continua3(timeline_map1_eng):
+	get_tree().paused = false # Despausa o jogo
+	$instrucao/CollisionShape2D.disabled = true # Desativa a colisão da area2d (a que ativa a instrução)
+
+func continua3_port(timeline_map1_port):
 	get_tree().paused = false # Despausa o jogo
 	$instrucao/CollisionShape2D.disabled = true # Desativa a colisão da area2d (a que ativa a instrução)
