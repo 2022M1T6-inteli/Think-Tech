@@ -4,7 +4,13 @@
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Planet 3..."
+			"text": "Aqui é o planeta Backlog. Neste planeta você irá entender como nossos funcionários compreendem cada desafio que aparece."
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Explore essa dimensão com cautela, pois o caminho só fica mais desafiador."
 		}
 	],
 	"metadata": {

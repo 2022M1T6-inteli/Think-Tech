@@ -321,7 +321,6 @@ enabled_focus_mode = 0
 text = "Lose"
 
 [node name="Textbox" type="Panel" parent="."]
-visible = false
 anchor_right = 1.0
 margin_left = 8.0
 margin_top = 8.0
@@ -337,7 +336,8 @@ margin_top = 8.0
 margin_right = -8.0
 margin_bottom = -8.0
 custom_fonts/font = ExtResource( 4 )
-text = "A DRAGON appears!"
+text = "a dragon appears!"
+autowrap = true
 
 [node name="Ticker" type="Label" parent="Textbox"]
 anchor_left = 1.0

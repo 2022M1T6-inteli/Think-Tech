@@ -4,7 +4,13 @@
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Planet 1..."
+			"text": "Neste primeiro planeta você irá aprender sobre um dos principais valores da Dell Star: Visão "
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Explore esse planeta, aprenda mais sobre nosso sistema e fique mais perto do seu objetivo. "
 		}
 	],
 	"metadata": {

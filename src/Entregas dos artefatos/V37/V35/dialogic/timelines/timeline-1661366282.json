@@ -24,7 +24,13 @@
 			"character": "character-1661366253.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "If you really want to become a Dev to the biggest empire in the galaxy, then you need to learn about the Nine Dimensions of the New Modell. Only then you will be ready to be face to face with the Queen, No Worries, I was once in your shoes and now I am here to help you. "
+			"text": "If you really want to become a Dev to the biggest empire in the galaxy, then you need to learn about the Nine Dimensions of the New Modell. "
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Only then you will be ready to be face to face with the Queen, No Worries, I was once in your shoes and now I am here to help you. "
 		}
 	],
 	"metadata": {
