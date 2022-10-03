@@ -16,7 +16,7 @@ func _ready():
 
 
 func _on_morte_body_entered(body):
-	get_tree().change_scene("res://GAME MAPAS/mapas/mapa3.tscn")
+	get_tree().change_scene("res://my_scene.tscn")
 
 
 func _on_key_body_entered(body):
