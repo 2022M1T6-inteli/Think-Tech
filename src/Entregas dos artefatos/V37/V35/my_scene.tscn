@@ -1,33 +1,33 @@
 [gd_scene load_steps=38 format=2]
 
-[ext_resource path="res://GAME MAPAS/Scripts/baularge.gd" type="Script" id=1]
-[ext_resource path="res://GAME MAPAS/Scripts/Reset_Level.gd" type="Script" id=2]
-[ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (3).png" type="Texture" id=3]
-[ext_resource path="res://GAME MAPAS/Scripts/plataforma2lent.gd" type="Script" id=4]
-[ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (4).png" type="Texture" id=5]
-[ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (2).png" type="Texture" id=6]
-[ext_resource path="res://MUSIC/toby fox - UNDERTALE Soundtrack - 06 Uwa!! So Temperate.mp3.mp3" type="AudioStream" id=7]
-[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=8]
-[ext_resource path="res://assents purple/assents purple (2)/asen/espin.png" type="Texture" id=9]
-[ext_resource path="res://src/Objects/Coin.gd" type="Script" id=10]
-[ext_resource path="res://src2/Battle.gd" type="Script" id=11]
-[ext_resource path="res://assents purple/assents purple (2)/asen/1560881.png" type="Texture" id=12]
-[ext_resource path="res://GAME MAPAS/Scripts/plataforma.gd" type="Script" id=13]
-[ext_resource path="res://assents/microFantasy.v0.1/tilesets/topdown.png" type="Texture" id=14]
-[ext_resource path="res://src/Actors/Player.gd" type="Script" id=15]
-[ext_resource path="res://GAME MAPAS/Scripts/baumid.gd" type="Script" id=16]
-[ext_resource path="res://src/UserInterface/PauseMenu.gd" type="Script" id=17]
-[ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=18]
-[ext_resource path="res://shutterstock_1833533875.jpg" type="Texture" id=19]
-[ext_resource path="res://GAME MAPAS/mapas/baularge.tscn" type="PackedScene" id=20]
-[ext_resource path="res://Sounds/mixkit-game-treasure-coin-2038.wav" type="AudioStream" id=21]
-[ext_resource path="res://src2/Battle.tscn" type="PackedScene" id=22]
-[ext_resource path="res://GAME MAPAS/mapas/plataforma.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=24]
-[ext_resource path="res://src/Actors/Enemy.tscn" type="PackedScene" id=25]
-[ext_resource path="res://GAME MAPAS/mapas/baumid.tscn" type="PackedScene" id=26]
-[ext_resource path="res://src/UserInterface/PauseMenu.tscn" type="PackedScene" id=27]
-[ext_resource path="res://src/Objects/Coin.tscn" type="PackedScene" id=28]
+[ext_resource path="res://MUSIC/toby fox - UNDERTALE Soundtrack - 06 Uwa!! So Temperate.mp3.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Sounds/mixkit-game-treasure-coin-2038.wav" type="AudioStream" id=2]
+[ext_resource path="res://src2/Battle.gd" type="Script" id=3]
+[ext_resource path="res://GAME MAPAS/Scripts/baularge.gd" type="Script" id=4]
+[ext_resource path="res://GAME MAPAS/Scripts/plataforma.gd" type="Script" id=5]
+[ext_resource path="res://assents/microFantasy.v0.1/tilesets/topdown.png" type="Texture" id=6]
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=7]
+[ext_resource path="res://src/Actors/Player.gd" type="Script" id=8]
+[ext_resource path="res://GAME MAPAS/Scripts/plataforma2lent.gd" type="Script" id=9]
+[ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=10]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=11]
+[ext_resource path="res://GAME MAPAS/Scripts/Reset_Level.gd" type="Script" id=12]
+[ext_resource path="res://GAME MAPAS/mapas/baularge.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/Objects/Coin.gd" type="Script" id=14]
+[ext_resource path="res://src/UserInterface/PauseMenu.gd" type="Script" id=15]
+[ext_resource path="res://src/Actors/Enemy.tscn" type="PackedScene" id=16]
+[ext_resource path="res://GAME MAPAS/mapas/plataforma.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src2/Battle.tscn" type="PackedScene" id=18]
+[ext_resource path="res://GAME MAPAS/Scripts/baumid.gd" type="Script" id=19]
+[ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (2).png" type="Texture" id=21]
+[ext_resource path="res://assents purple/assents purple (2)/asen/espin.png" type="Texture" id=23]
+[ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (3).png" type="Texture" id=24]
+[ext_resource path="res://assents purple/assents purple (2)/asen/1560881.png" type="Texture" id=25]
+[ext_resource path="res://assents purple/assents purple (2)/asen/New Piskel (4).png" type="Texture" id=26]
+[ext_resource path="res://shutterstock_1833533875.jpg" type="Texture" id=27]
+[ext_resource path="res://src/UserInterface/PauseMenu.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/Objects/Coin.tscn" type="PackedScene" id=29]
+[ext_resource path="res://GAME MAPAS/mapas/baumid.tscn" type="PackedScene" id=30]
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -43,7 +43,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=2]
 0/name = "topdown.png 0"
-0/texture = ExtResource( 14 )
+0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 16, 32, 16, 16 )
@@ -64,7 +64,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 0/z_index = 0
 1/name = "New Piskel (3).png 1"
-1/texture = ExtResource( 3 )
+1/texture = ExtResource( 24 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 0, 16, 16 )
@@ -78,7 +78,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 1/shapes = [  ]
 1/z_index = 0
 2/name = "espin.png 2"
-2/texture = ExtResource( 9 )
+2/texture = ExtResource( 23 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 0, 16, 16 )
@@ -92,7 +92,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 2/shapes = [  ]
 2/z_index = 0
 3/name = "New Piskel (4).png 3"
-3/texture = ExtResource( 5 )
+3/texture = ExtResource( 26 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 16, 16 )
@@ -113,7 +113,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 3/z_index = 0
 4/name = "New Piskel (2).png 4"
-4/texture = ExtResource( 6 )
+4/texture = ExtResource( 21 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 16, 16 )
@@ -127,7 +127,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 4/shapes = [  ]
 4/z_index = 0
 5/name = "1560881.png 5"
-5/texture = ExtResource( 12 )
+5/texture = ExtResource( 25 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 48, 112, 16, 16 )
@@ -141,7 +141,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 5/shapes = [  ]
 5/z_index = 0
 6/name = "topdown.png 6"
-6/texture = ExtResource( 14 )
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 16, 32, 16, 16 )
@@ -162,7 +162,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 6/z_index = 0
 7/name = "topdown.png 7"
-7/texture = ExtResource( 14 )
+7/texture = ExtResource( 6 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 16, 32, 16, 16 )
@@ -183,7 +183,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 7/z_index = 0
 8/name = "topdown.png 8"
-8/texture = ExtResource( 14 )
+8/texture = ExtResource( 6 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 32, 16, 16 )
@@ -211,78 +211,78 @@ extents = Vector2( 15, 20 )
 extents = Vector2( 18, 13.75 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource( 12 )
 
 [node name="1560881" type="Sprite" parent="."]
 position = Vector2( 480, 384 )
 scale = Vector2( 1.3064, 1.31096 )
-texture = ExtResource( 12 )
+texture = ExtResource( 25 )
 
 [node name="Shutterstock1833533875" type="Sprite" parent="."]
 self_modulate = Color( 0.513726, 0.203922, 0.745098, 1 )
 position = Vector2( 510.5, 297.847 )
 scale = Vector2( 0.337667, 0.365158 )
-texture = ExtResource( 19 )
+texture = ExtResource( 27 )
 
 [node name="plataforma2" type="Node2D" parent="."]
 
-[node name="plataforma" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="plataforma" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 53.115, -7.796 )
 scale = Vector2( 0.546, 1 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 50.0
 horizontal = true
 distance = 250
 
-[node name="plataforma3" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="plataforma3" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 352, 32 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 50.0
 horizontal = true
 distance = 250
 
-[node name="plataforma4" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="plataforma4" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 765.024, 185.724 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 50.0
 horizontal = false
 distance = 200
 
-[node name="plataforma5" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="plataforma5" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 400, 375.997 )
 scale = Vector2( 0.84, 1 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 50.0
 horizontal = false
 distance = 200
 
-[node name="plataforma6" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="plataforma6" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 252.851, 384 )
 scale = Vector2( 0.379462, 0.915396 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 50.0
 horizontal = true
 distance = -300
 
-[node name="moving plat2" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="moving plat2" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 8, 456 )
 scale = Vector2( 0.12, 1 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 50.0
 horizontal = false
 distance = 300
 
-[node name="moving plat lent" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="moving plat lent" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 34, 184 )
 scale = Vector2( 0.48, 1 )
-script = ExtResource( 4 )
+script = ExtResource( 9 )
 speed = 40.0
 horizontal = true
 distance = 200
 
-[node name="plataforma7" type="Node2D" parent="plataforma2" instance=ExtResource( 23 )]
+[node name="plataforma7" type="Node2D" parent="plataforma2" instance=ExtResource( 17 )]
 position = Vector2( 126.715, 473.077 )
-script = ExtResource( 13 )
+script = ExtResource( 5 )
 speed = 22.0
 horizontal = true
 distance = 640
@@ -329,37 +329,37 @@ position = Vector2( 25, 566 )
 shape = SubResource( 10 )
 
 [node name="Fundo_sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 1 )
 volume_db = -5.0
 pitch_scale = 0.95
 
 [node name="Key_Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 21 )
+stream = ExtResource( 2 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 layer = 100
 
-[node name="PauseMenu" type="Control" parent="InterfaceLayer" instance=ExtResource( 27 )]
+[node name="PauseMenu" type="Control" parent="InterfaceLayer" instance=ExtResource( 28 )]
 pause_mode = 2
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource( 8 )
-script = ExtResource( 17 )
+theme = ExtResource( 7 )
+script = ExtResource( 15 )
 _start_position = Vector2( 0, -20 )
 _end_position = Vector2( 0, 0 )
 fade_in_duration = 0.3
 fade_out_duration = 0.2
 
-[node name="Player" type="KinematicBody2D" parent="." groups=["Player_"] instance=ExtResource( 24 )]
-position = Vector2( 63, 81 )
+[node name="Player" type="KinematicBody2D" parent="." groups=["Player_"] instance=ExtResource( 11 )]
+position = Vector2( 411.574, 449.289 )
 collision_layer = 2147505153
 collision_mask = 2147505182
-script = ExtResource( 15 )
+script = ExtResource( 8 )
 speed = Vector2( 150, 350 )
 action_suffix = ""
 
-[node name="Battle" type="Control" parent="Player" instance=ExtResource( 22 )]
+[node name="Battle" type="Control" parent="Player" instance=ExtResource( 18 )]
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -369,125 +369,120 @@ margin_left = -400.0
 margin_top = -240.0
 margin_right = 400.0
 margin_bottom = 240.0
-script = ExtResource( 11 )
+script = ExtResource( 3 )
 
-[node name="Coin" type="Area2D" parent="." instance=ExtResource( 28 )]
-position = Vector2( 346, 54 )
-collision_layer = 0
-monitoring = false
-monitorable = false
-script = ExtResource( 10 )
-
-[node name="Coin2" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin2" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 703, 528 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin3" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin3" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 180, 241 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin4" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin4" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 544, 71 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin5" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin5" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 899, 37 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin6" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin6" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 883, 390 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin7" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin7" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 691, 363 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin8" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin8" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 492, 199 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin9" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin9" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 28, 217 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="Coin10" type="Area2D" parent="." instance=ExtResource( 28 )]
+[node name="Coin10" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 259, 536 )
 collision_layer = 0
 monitoring = false
 monitorable = false
-script = ExtResource( 10 )
+script = ExtResource( 14 )
 
-[node name="baularge" type="Area2D" parent="." instance=ExtResource( 20 )]
+[node name="baularge" type="Area2D" parent="." instance=ExtResource( 13 )]
 position = Vector2( 521, 200 )
 collision_layer = 2147483648
 collision_mask = 2147483648
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 
-[node name="baularge2" type="Area2D" parent="." instance=ExtResource( 20 )]
+[node name="baularge2" type="Area2D" parent="." instance=ExtResource( 13 )]
 position = Vector2( 72, 552 )
 collision_layer = 2147483648
 collision_mask = 2147483648
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 
-[node name="baumid" type="Area2D" parent="." instance=ExtResource( 26 )]
+[node name="baumid" type="Area2D" parent="." instance=ExtResource( 30 )]
 position = Vector2( 1000, 72 )
 collision_layer = 2147483648
 collision_mask = 2147483648
-script = ExtResource( 16 )
+script = ExtResource( 19 )
 
-[node name="baumid2" type="Area2D" parent="." instance=ExtResource( 26 )]
+[node name="baumid2" type="Area2D" parent="." instance=ExtResource( 30 )]
 position = Vector2( 1000, 360 )
 collision_layer = 2147483648
 collision_mask = 2147483648
-script = ExtResource( 16 )
+script = ExtResource( 19 )
 
 [node name="Instrucao" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Instrucao"]
 position = Vector2( 64, 61 )
 shape = SubResource( 11 )
+disabled = true
 
-[node name="Enemy3" type="KinematicBody2D" parent="." instance=ExtResource( 25 )]
-position = Vector2( 368, 453 )
+[node name="Enemy3" type="KinematicBody2D" parent="." instance=ExtResource( 16 )]
+position = Vector2( 406.82, 452.925 )
 collision_layer = 32768
 collision_mask = 32792
-script = ExtResource( 18 )
+script = ExtResource( 10 )
 speed = Vector2( 75, 250 )
 
 [node name="Area2D3" type="Area2D" parent="Enemy3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy3/Area2D3"]
 shape = SubResource( 12 )
+disabled = true
 
-[node name="Enemy" type="KinematicBody2D" parent="." instance=ExtResource( 25 )]
-position = Vector2( 698, 263 )
+[node name="Enemy" type="KinematicBody2D" parent="." instance=ExtResource( 16 )]
+position = Vector2( 761.749, 260.925 )
 collision_layer = 32768
 collision_mask = 32792
-script = ExtResource( 18 )
+script = ExtResource( 10 )
 speed = Vector2( 75, 250 )
 
 [node name="Area2D1" type="Area2D" parent="Enemy"]
@@ -495,11 +490,11 @@ speed = Vector2( 75, 250 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Area2D1"]
 shape = SubResource( 12 )
 
-[node name="Enemy2" type="KinematicBody2D" parent="." instance=ExtResource( 25 )]
-position = Vector2( 325, 263 )
+[node name="Enemy2" type="KinematicBody2D" parent="." instance=ExtResource( 16 )]
+position = Vector2( 291.086, 260.925 )
 collision_layer = 32768
 collision_mask = 32792
-script = ExtResource( 18 )
+script = ExtResource( 10 )
 speed = Vector2( 75, 250 )
 
 [node name="Area2D2" type="Area2D" parent="Enemy2"]
@@ -507,11 +502,11 @@ speed = Vector2( 75, 250 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2/Area2D2"]
 shape = SubResource( 12 )
 
-[node name="Enemy4" type="KinematicBody2D" parent="." instance=ExtResource( 25 )]
-position = Vector2( 133, 551 )
+[node name="Enemy4" type="KinematicBody2D" parent="." instance=ExtResource( 16 )]
+position = Vector2( 83.0824, 548.925 )
 collision_layer = 32768
 collision_mask = 32792
-script = ExtResource( 18 )
+script = ExtResource( 10 )
 speed = Vector2( 75, 250 )
 
 [node name="Area2D4" type="Area2D" parent="Enemy4"]
@@ -520,7 +515,6 @@ speed = Vector2( 75, 250 )
 shape = SubResource( 12 )
 
 [connection signal="body_entered" from="morte" to="." method="_on_morte_body_entered"]
-[connection signal="body_entered" from="Coin" to="Coin" method="_on_body_entered"]
 [connection signal="body_entered" from="Coin2" to="Coin2" method="_on_body_entered"]
 [connection signal="body_entered" from="Coin3" to="Coin3" method="_on_body_entered"]
 [connection signal="body_entered" from="Coin4" to="Coin4" method="_on_body_entered"]
