@@ -1,15 +1,33 @@
 {
 	"events": [
 		{
-			"character": "character-1663787075.json",
+			"character": "character-1664810111.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Parabéns! Você desbloqueou um card. Vá até o menu pause (ESC) e aperte na sessão Cards."
+			"text": "Bem-vindo! Pressione 'Enter' para continuar um diálogo."
+		},
+		{
+			"character": "character-1664810111.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pressione as teclas ' W ' ou 'UI_UP' para pular, 'A' ou 'IU_LEFT' para mover para a esquerda e 'D' ou 'UI_RIGHT' para mover para a direita."
+		},
+		{
+			"character": "character-1664810111.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para pausar o jogo pressione 'ESC'."
+		},
+		{
+			"character": "character-1664810111.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Colete cinco moedas para desbloquear seu primeiro baralho de cartas!"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.4",
 		"file": "timeline-1663787049.json",
-		"name": "Instrucao2_eng"
+		"name": "Instrucao1_port"
 	}
 }

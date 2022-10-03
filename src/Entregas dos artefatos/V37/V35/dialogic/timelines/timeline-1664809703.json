@@ -1,0 +1,41 @@
+{
+	"events": [
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haha. Eu finalmente peguei você INVASOR!"
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Não sou um invasor, sou apenas um caroneiro de galáxias que sonha em se tornar um Dev da Dellstar. Eu estava indo encontrar Ada, mas meu foguete quebrou neste planeta..."
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Se você realmente quer se tornar um desenvolvedor do maior império da galáxia, então você precisa aprender sobre as Nove Dimensões do Novo Modelo."
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Só então você estará pronto para ficar cara a cara com a Rainha, Não se preocupe, eu já estive no seu lugar e agora estou aqui para ajudá-lo."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664809703.json",
+		"name": "port_adoy1"
+	}
+}

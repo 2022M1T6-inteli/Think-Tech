@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uau! O portão está fechado. Acho que vou ter que hackear o sistema para abrir o caminho!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664809727.json",
+		"name": "port_dialogcombat"
+	}
+}
