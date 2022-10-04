@@ -9,6 +9,7 @@ onready var _pause_menu = $InterfaceLayer/PauseMenu
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Checkpoint.coinsCollected=Checkpoint.coinsSaved
+	Checkpoint.dimension=2
 	if !MusicGlobal.is_playing:
 		MusicGlobal.play_music4()
 	Checkpoint.packed_scene.pack(get_tree().get_current_scene()) # Checkpoint chamado para salvar a cena mapa1 assim que o player entra

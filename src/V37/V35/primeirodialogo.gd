@@ -9,6 +9,7 @@ func _ready():
 	Checkpoint.packed_scene.pack(get_tree().get_current_scene())
 	ResourceSaver.save("res://my_scene.tscn", Checkpoint.packed_scene) # Checkpoint salva a cena primeirodialogo
 	Checkpoint.coinsCollected=Checkpoint.coinsSaved
+	Checkpoint.dimension=0
 	
 	# Inicia a música do primeiro diálogo
 	if !MusicGlobal.is_playing:

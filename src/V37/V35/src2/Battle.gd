@@ -14,10 +14,10 @@ func _init():
 	OS.min_window_size = OS.window_size
 	OS.max_window_size = OS.get_screen_size()
 func _ready():
-	#MusicGlobal.play_music7()
+	MusicGlobal.play_music7()
 	
 	Checkpoint.enemy=Checkpoint.enemy1
-	"""
+	
 	if(Checkpoint.dimension==0):
 		questions=Questions.ListaQDim0
 		alternatives=Questions.ListaADim0
@@ -27,9 +27,8 @@ func _ready():
 	elif(Checkpoint.dimension==2):
 		questions=Questions.ListaQDim2
 		alternatives=Questions.ListaADim2
-	"""
-	questions=Questions.ListaQDim1_2
-	alternatives=Questions.ListaADim1_2
+	
+
 	
 	set_health($EnemyContainer/ProgressBar, Checkpoint.enemy.health, Checkpoint.enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, State.current_health, State.max_health)
@@ -90,7 +89,7 @@ func _on_Run_pressed():
 
 func Attack():
 	
-	display_text("You swing your piercing sword!")
+	display_text("You attack!")
 	yield(self, "textbox_closed")
 	var tdam=State.damage*multi
 	
@@ -111,6 +110,9 @@ func Attack():
 		yield($AnimationPlayer, "animation_finished")
 		
 		yield(get_tree().create_timer(0.25), "timeout")
+		MusicGlobal.stop_music()
+		questions=Questions.ListaQDim1_2
+		alternatives=Questions.ListaADim1_2
 		_on_Run_pressed()
 	enemy_turn()
 
@@ -127,6 +129,7 @@ func _on_Defend_pressed():
 func _on_Precision_pressed():
 	$Precision.show()
 	randomize()
+	print(questions.size())
 	question_id=randi()%questions.size()-1
 	display_text(questions[question_id][0])
 	var lista=[alternatives[question_id][0],alternatives[question_id][1],alternatives[question_id][2],alternatives[question_id][3]]
@@ -233,4 +236,6 @@ func verificar():
 
 
 func _on_Run2_pressed():
+	questions=Questions.ListaQDim1_2
+	alternatives=Questions.ListaADim1_2
 	get_tree().change_scene("res://Gameover/GAMEOVER.tscn")

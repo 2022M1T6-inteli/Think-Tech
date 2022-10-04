@@ -5,7 +5,7 @@ onready var _pause_menu = $InterfaceLayer/PauseMenu # A variável está recebend
 
 func _ready():
 	Checkpoint.coinsCollected=Checkpoint.coinsSaved # Checkpoint chamado para salvar a quantidade de moedas que o player já coletou na fase anterior
-	
+	Checkpoint.dimension=1
 	if !MusicGlobal.is_playing: # A música do mapa1 começa a tocar
 		MusicGlobal.play_music3()
 
