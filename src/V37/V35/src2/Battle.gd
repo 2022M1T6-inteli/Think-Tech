@@ -93,8 +93,12 @@ func enemy_turn():
 	set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
 	$AnimationPlayer.play("shake")
 	yield($AnimationPlayer, "animation_finished")
-	display_text("%s dealt %d damage!" % [Checkpoint.enemy.name, Checkpoint.enemy.damage])
-	yield(self, "textbox_closed")
+	if Global.lang==1:
+		display_text("%s dealt %d damage!" % [Checkpoint.enemy.name, Checkpoint.enemy.damage])
+		yield(self, "textbox_closed")
+	else:
+		display_text("%s causou %d de dano!" % [Checkpoint.enemy.name, Checkpoint.enemy.damage])
+		yield(self, "textbox_closed")
 	if(current_player_health<=0):
 			get_tree().change_scene("res://Gameover/GAMEOVER.tscn")
 	$ActionsPanel.show()

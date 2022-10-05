@@ -585,16 +585,16 @@ margin_bottom = 305.0
 texture = ExtResource( 1 )
 stretch_mode = 4
 
-[connection signal="pressed" from="ActionsPanel/Actions/Precision" to="." method="_on_Precision_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Precision" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="ActionsPanel/Actions/Precision" to="." method="_on_Precision_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Defend" to="." method="_on_Defend_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Run" to="." method="_on_Run_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Run2" to="." method="_on_Run2_pressed"]
-[connection signal="pressed" from="Precision/Prec1" to="." method="_on_Prec1_pressed"]
 [connection signal="pressed" from="Precision/Prec1" to="." method="_on_Attack_pressed"]
-[connection signal="pressed" from="Precision/Prec2" to="." method="_on_Prec2_pressed"]
+[connection signal="pressed" from="Precision/Prec1" to="." method="_on_Prec1_pressed"]
 [connection signal="pressed" from="Precision/Prec2" to="." method="_on_Attack_pressed"]
-[connection signal="pressed" from="Precision/Prec3" to="." method="_on_Prec3_pressed"]
+[connection signal="pressed" from="Precision/Prec2" to="." method="_on_Prec2_pressed"]
 [connection signal="pressed" from="Precision/Prec3" to="." method="_on_Attack_pressed"]
-[connection signal="pressed" from="Precision/Prec4" to="." method="_on_Prec4_pressed"]
+[connection signal="pressed" from="Precision/Prec3" to="." method="_on_Prec3_pressed"]
 [connection signal="pressed" from="Precision/Prec4" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="Precision/Prec4" to="." method="_on_Prec4_pressed"]

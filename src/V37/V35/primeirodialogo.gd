@@ -179,3 +179,29 @@ func _on_check1_body_entered(body):
 	Checkpoint.coinsCollected=Checkpoint.coinsSaved
 	Checkpoint.packed_scene2.pack(get_tree().get_current_scene())
 	ResourceSaver.save("res://my_scene2.tscn", Checkpoint.packed_scene2)
+
+
+func _on_instrucao_bau_body_entered(body):
+	
+	if body.name == "Player": # Identifica que o player entrou
+		get_tree().paused = true # Pausa a tela
+
+		if Global.lang==1:
+			var dialog = Dialogic.start("bau_eng") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'npause_eng') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+		if Global.lang==2:
+			var dialog = Dialogic.start("bau_port") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'npause_port') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+func npause_eng(timeline_bau_eng):
+	get_tree().paused = false # Despausa o jogo
+	$instrucao_bau/CollisionShape2D.disabled=true
+
+func npause_port(timeline_bau_port):
+	get_tree().paused = false # Despausa o jogo
+	$instrucao_bau/CollisionShape2D.disabled=true

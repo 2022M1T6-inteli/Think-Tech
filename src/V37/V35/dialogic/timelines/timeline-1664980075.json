@@ -1,0 +1,21 @@
+{
+	"events": [
+		{
+			"character": "character-1664810111.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Baah! Você encontrou um baú. Pressione a tecla 'E' para abrir o baú."
+		},
+		{
+			"character": "character-1664810111.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dentro há café. Será o item mais útil em sua jornada. Use-o para recuperar vida durante o combate."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664980075.json",
+		"name": "bau_port"
+	}
+}
