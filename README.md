@@ -92,11 +92,11 @@ Aqui estão as referências usadas no projeto.
 
 5. Som nuclear = https://pixabay.com/sound-effects/nuclear-alarm-6997/
 
-6. Background map1 = https://www.shutterstock.com/pt/image-vector/pixel-art-game-location-alien-red-1833533875
+6. Background mapa 1 = https://www.shutterstock.com/pt/image-vector/pixel-art-game-location-alien-red-1833533875
 
-7. Background map2 =<a href="https://br.freepik.com/vetores-gratis/fundo-mistico-de-pixel-art_29019077.htm#query=pixel%20art%20background&position=5&from_view=search">Imagem de pikisuperstar</a> no Freepik
+7. Background mapa 2 =<a href="https://br.freepik.com/vetores-gratis/fundo-mistico-de-pixel-art_29019077.htm#query=pixel%20art%20background&position=5&from_view=search">Imagem de pikisuperstar</a> no Freepik
 
-8. Backgroud maps3 =https://www.shutterstock.com/pt/image-vector/mountains-area-on-alien-planet-pixel-1620602974
+8. Backgroud mapa 3 =https://www.shutterstock.com/pt/image-vector/mountains-area-on-alien-planet-pixel-1620602974
 
 9. Sounds undertale = https://archive.org/details/undertaleost_202004
 
