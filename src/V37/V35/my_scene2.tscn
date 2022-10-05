@@ -198,6 +198,7 @@ volume_db = -5.0
 [node name="Coin4" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 494, 57 )
 collision_layer = 0
+monitoring = false
 monitorable = false
 script = ExtResource( 18 )
 
@@ -292,12 +293,14 @@ shape = SubResource( 7 )
 [node name="Coin8" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 807, 23 )
 collision_layer = 0
+monitoring = false
 monitorable = false
 script = ExtResource( 18 )
 
 [node name="Coin14" type="Area2D" parent="." instance=ExtResource( 29 )]
 position = Vector2( 805, 192 )
 collision_layer = 0
+monitoring = false
 monitorable = false
 script = ExtResource( 18 )
 

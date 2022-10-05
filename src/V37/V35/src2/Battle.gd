@@ -146,7 +146,7 @@ func Attack():
 		yield(get_tree().create_timer(0.25), "timeout")
 		MusicGlobal.stop_music()
 		_on_Run_pressed()
-	enemy_turn()
+	$ActionsPanel.show()
 
 
 func _on_Defend_pressed():
@@ -238,11 +238,13 @@ func verificar():
 			questions.pop_at(question_id)
 			alternatives.pop_at(question_id)
 			Attack()
+			$ActionsPanel.show()
 			
 		else:
 			multi=0
 			$Precision.hide()
 			Attack()
+			enemy_turn()
 			
 		
 	elif (chosen_alt==2):
@@ -253,11 +255,13 @@ func verificar():
 				questions.pop_at(question_id)
 				alternatives.pop_at(question_id)
 				Attack()
+				$ActionsPanel.show()
 				
 			else:
 				multi=0
 				$Precision.hide()
 				Attack()
+				enemy_turn()
 				
 	elif (chosen_alt==3):
 			if($Precision/Prec3/Label.text == alternatives[question_id][0]):
@@ -268,10 +272,12 @@ func verificar():
 				alternatives.pop_at(question_id)
 				Attack()
 				
+				
 			else:
 				multi=0
 				$Precision.hide()
 				Attack()
+				enemy_turn()
 				
 	elif (chosen_alt==4):
 			if($Precision/Prec4/Label.text == alternatives[question_id][0]):
@@ -286,6 +292,7 @@ func verificar():
 				multi=0
 				$Precision.hide()
 				Attack()
+				enemy_turn()
 	
 	
 
