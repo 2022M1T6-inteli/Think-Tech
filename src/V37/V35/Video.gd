@@ -14,6 +14,11 @@ extends Control
 #func _process(delta):
 #	pass
 func _ready():
+	if Global.lang==1:
+		$ColorRect/Label.text = "To skip, press:"
+	if Global.lang==2:
+		$ColorRect/Label.text = "Para pular, pressione:"
+	
 	$ColorRect.show()
 	if !MusicGlobal.is_playing: # A música do mapa1 começa a tocar
 		MusicGlobal.play_music0()

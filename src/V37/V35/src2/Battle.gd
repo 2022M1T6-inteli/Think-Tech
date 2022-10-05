@@ -14,6 +14,14 @@ func _init():
 	OS.min_window_size = OS.window_size
 	OS.max_window_size = OS.get_screen_size()
 func _ready():
+	if Global.lang==1:
+		$ActionsPanel/Actions/Precision.text="Attack"
+		$ActionsPanel/Actions/Defend.text="Item"
+		$ActionsPanel/Actions/Run2.text="Run"
+	else:
+		$ActionsPanel/Actions/Precision.text="Ataque"
+		$ActionsPanel/Actions/Defend.text="Item"
+		$ActionsPanel/Actions/Run2.text="Fugir"
 	MusicGlobal.play_music7()
 
 	if(Checkpoint.dimension==0 and Global.lang==1):

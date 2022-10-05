@@ -1,5 +1,5 @@
 extends Node
-var lang=1
+var lang=2
 var item := false
 var cafeM = 0
 var cafeL = 0

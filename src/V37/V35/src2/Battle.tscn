@@ -320,7 +320,7 @@ custom_styles/hover = SubResource( 5 )
 custom_styles/pressed = SubResource( 5 )
 custom_styles/normal = SubResource( 4 )
 enabled_focus_mode = 0
-text = "Desistir"
+text = "skip"
 
 [node name="Textbox" type="Panel" parent="."]
 visible = false
