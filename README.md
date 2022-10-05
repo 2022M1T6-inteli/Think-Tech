@@ -83,9 +83,21 @@ A cada atualização os detalhes devem ser lançados aqui.
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
+1. Easter egg among = Image by <a href="https://pixabay.com/users/mustachioed_pizza-6494611/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6063246">Ruben</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6063246">Pixabay</a>
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+2. tilemaps = https://craftpix.net/download/20763/
+3. tilemaps = https://ansimuz.itch.io/gothicvania-rocky-pass-environment
+
+4. Easter egg pingas = https://www.shutterstock.com/pt/image-vector/pixel-art-table-tennis-1373380559
+
+5. Som nuclear = https://pixabay.com/sound-effects/nuclear-alarm-6997/
+
+6. Background map1 = https://www.shutterstock.com/pt/image-vector/pixel-art-game-location-alien-red-1833533875
+
+7. Background map2 =<a href="https://br.freepik.com/vetores-gratis/fundo-mistico-de-pixel-art_29019077.htm#query=pixel%20art%20background&position=5&from_view=search">Imagem de pikisuperstar</a> no Freepik
+
+8. Backgroud maps3 =https://www.shutterstock.com/pt/image-vector/mountains-area-on-alien-planet-pixel-1620602974
+
+9. Sounds undertale = https://archive.org/details/undertaleost_202004
+
+10. Background mapa tutorial = https://craftpix.net/freebies/free-swamp-game-tileset-pixel-art/
