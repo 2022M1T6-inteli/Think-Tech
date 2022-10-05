@@ -12,8 +12,7 @@ func _ready():
 	Checkpoint.dimension=0
 	
 	# Inicia a música do primeiro diálogo
-	if !MusicGlobal.is_playing:
-		MusicGlobal.play_music2()
+	MusicGlobal.play_music2()
 	
 	$Area2D/prison.hide() # Oculta a prisão
 	

@@ -255,7 +255,7 @@ __meta__ = {
 }
 
 [node name="Precision" type="Button" parent="ActionsPanel/Actions"]
-margin_right = 308.0
+margin_right = 98.0
 margin_bottom = 20.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
@@ -288,9 +288,8 @@ enabled_focus_mode = 0
 text = "iTEM"
 
 [node name="Run" type="Button" parent="ActionsPanel/Actions"]
-visible = false
-margin_left = 157.0
-margin_right = 229.0
+margin_left = 104.0
+margin_right = 203.0
 margin_bottom = 20.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
@@ -306,7 +305,6 @@ enabled_focus_mode = 0
 text = "Win"
 
 [node name="Run2" type="Button" parent="ActionsPanel/Actions"]
-visible = false
 margin_left = 209.0
 margin_right = 308.0
 margin_bottom = 20.0
@@ -586,16 +584,16 @@ margin_bottom = 305.0
 texture = ExtResource( 1 )
 stretch_mode = 4
 
-[connection signal="pressed" from="ActionsPanel/Actions/Precision" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Precision" to="." method="_on_Precision_pressed"]
+[connection signal="pressed" from="ActionsPanel/Actions/Precision" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Defend" to="." method="_on_Defend_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Run" to="." method="_on_Run_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Run2" to="." method="_on_Run2_pressed"]
-[connection signal="pressed" from="Precision/Prec1" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="Precision/Prec1" to="." method="_on_Prec1_pressed"]
-[connection signal="pressed" from="Precision/Prec2" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="Precision/Prec1" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="Precision/Prec2" to="." method="_on_Prec2_pressed"]
-[connection signal="pressed" from="Precision/Prec3" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="Precision/Prec2" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="Precision/Prec3" to="." method="_on_Prec3_pressed"]
-[connection signal="pressed" from="Precision/Prec4" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="Precision/Prec3" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="Precision/Prec4" to="." method="_on_Prec4_pressed"]
+[connection signal="pressed" from="Precision/Prec4" to="." method="_on_Attack_pressed"]

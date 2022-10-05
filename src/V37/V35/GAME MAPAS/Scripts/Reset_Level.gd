@@ -106,3 +106,41 @@ func _on_Area2D4_body_entered(body):
 		Checkpoint.packed_scene2.pack(get_tree().get_current_scene())
 		ResourceSaver.save("res://my_scene2.tscn", Checkpoint.packed_scene2)
 		get_tree().change_scene("res://src2/Battle.tscn")
+
+
+func _on_Ada_body_entered(body):
+
+	if body.name == "Player": # Identifica que o player entrou
+		get_tree().paused = true # Pausa a tela
+
+		if Global.lang==1:
+			var dialog = Dialogic.start("ada_eng") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'unpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+		if Global.lang==2:
+			var dialog = Dialogic.start("ada_port") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'port_unpause') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+func unpause(timeline_ada_eng):
+	get_tree().paused = false # Despausa o jogo
+	
+	yield(get_tree().create_timer(0.3), "timeout") 
+	
+	Checkpoint.coinsSaved=Checkpoint.coinsCollected # Checkpoint é chamado
+	
+	#get_tree().change_scene(tela de creditos) # Chama a cena da constelação
+	
+
+
+func port_unpause(timeline_ada_port):
+	get_tree().paused = false # Despausa o jogo
+	
+	yield(get_tree().create_timer(0.3), "timeout") 
+	
+	Checkpoint.coinsSaved=Checkpoint.coinsCollected # Checkpoint é chamado
+	
+	#get_tree().change_scene(tela de creditos) # Chama a cena da constelação

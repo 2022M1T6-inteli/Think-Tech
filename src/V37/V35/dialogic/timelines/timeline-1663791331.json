@@ -10,7 +10,7 @@
 			"character": "character-1663787075.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Press the keys ' W ' or 'UI_UP' to jump,  'A'  or 'IU_LEFT'  to move to the left and 'D' or 'UI_RIGHT' to move to the right."
+			"text": "Press the keys ' W ' or 'UP arrow' to jump,  'A'  or 'LEFT arrow'  to move to the left and 'D' or 'RIGHT arrow' to move to the right."
 		},
 		{
 			"character": "character-1663787075.json",

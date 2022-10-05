@@ -8,8 +8,8 @@ var is_defending = false
 var chosen_alt=0#alternativa escolhida
 var question_id#variavel que armazena um numero aleatorio
 var multi=0
-var questions
-var alternatives
+var questions=Questions.EnListaQDim0
+var alternatives=Questions.EnListaADim0
 func _init():
 	OS.min_window_size = OS.window_size
 	OS.max_window_size = OS.get_screen_size()
@@ -18,16 +18,30 @@ func _ready():
 	
 	Checkpoint.enemy=Checkpoint.enemy1
 	
-	if(Checkpoint.dimension==0):
-		questions=Questions.ListaQDim0
-		alternatives=Questions.ListaADim0
-	elif(Checkpoint.dimension==1):
-		questions=Questions.ListaQDim1
-		alternatives=Questions.ListaADim1
-	elif(Checkpoint.dimension==2):
-		questions=Questions.ListaQDim2
-		alternatives=Questions.ListaADim2
-	
+	if(Checkpoint.dimension==0 and Global.lang==1):
+		questions=Questions.EnListaQDim0 
+		alternatives=Questions.EnListaADim0
+	elif(Checkpoint.dimension==0 and Global.lang==2):
+		questions=Questions.PtListaQDim0
+		alternatives=Questions.PtListaADim0
+	elif(Checkpoint.dimension==1 and Global.lang==1):
+		questions=Questions.EnListaQDim1
+		alternatives=Questions.EnListaADim1
+	elif(Checkpoint.dimension==1 and Global.lang==2):
+		questions=Questions.PtListaQDim1
+		alternatives=Questions.PtListaADim1
+	elif(Checkpoint.dimension==2 and Global.lang==1):
+		questions=Questions.EnListaQDim2
+		alternatives=Questions.EnListaADim2
+	elif(Checkpoint.dimension==2 and Global.lang==2):
+		questions=Questions.PtListaQDim2
+		alternatives=Questions.PtListaADim2
+	elif(Checkpoint.dimension==3 and Global.lang==1):
+		questions=Questions.EnListaQDim3
+		alternatives=Questions.EnListaADim3
+	elif(Checkpoint.dimension==3 and Global.lang==2):
+		questions=Questions.PtListaQDim3
+		alternatives=Questions.PtListaADim3
 
 	
 	set_health($EnemyContainer/ProgressBar, Checkpoint.enemy.health, Checkpoint.enemy.health)
@@ -111,8 +125,6 @@ func Attack():
 		
 		yield(get_tree().create_timer(0.25), "timeout")
 		MusicGlobal.stop_music()
-		questions=Questions.ListaQDim1_2
-		alternatives=Questions.ListaADim1_2
 		_on_Run_pressed()
 	enemy_turn()
 
@@ -236,6 +248,4 @@ func verificar():
 
 
 func _on_Run2_pressed():
-	questions=Questions.ListaQDim1_2
-	alternatives=Questions.ListaADim1_2
 	get_tree().change_scene("res://Gameover/GAMEOVER.tscn")

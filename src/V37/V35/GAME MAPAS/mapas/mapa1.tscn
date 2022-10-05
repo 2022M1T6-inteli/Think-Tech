@@ -363,7 +363,7 @@ texture = ExtResource( 14 )
 
 [node name="Shutterstock1833533875" type="Sprite" parent="."]
 self_modulate = Color( 0.443137, 0.184314, 0.184314, 1 )
-position = Vector2( 512.107, 288.097 )
+position = Vector2( 504, 303 )
 scale = Vector2( 0.341262, 0.392639 )
 texture = ExtResource( 7 )
 
