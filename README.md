@@ -101,5 +101,4 @@ Aqui estão as referências usadas no projeto.
 9. Sounds undertale = https://archive.org/details/undertaleost_202004
 
 10. Background mapa tutorial = https://craftpix.net/freebies/free-swamp-game-tileset-pixel-art/
-11. Sprites dos foguetes: https://www.imagensempng.com.br/foguete-pixelizado-png/
-                          https://www.gratispng.com/png-ovi7ol/
+11. Sprites dos foguetes:<br>https://www.imagensempng.com.br/foguete-pixelizado-png/<br>https://www.gratispng.com/png-ovi7ol/
