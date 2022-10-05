@@ -7,4 +7,3 @@ func _ready():
 	anim_sprite.play()
 func _process(delta):
 	$Label.text = str(Checkpoint.coinsCollected)
-	$Coffe.text = str(Global.cafeL)

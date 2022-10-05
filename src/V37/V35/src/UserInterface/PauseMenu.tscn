@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=1]
 [ext_resource path="res://src/UserInterface/PauseMenu.gd" type="Script" id=2]
@@ -19,6 +19,8 @@
 [ext_resource path="res://fonts/NES.tres" type="DynamicFont" id=17]
 [ext_resource path="res://Cards/teste.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/art/coin/coin.png" type="Texture" id=19]
+[ext_resource path="res://pixil-frame-0 (3).png" type="Texture" id=20]
+[ext_resource path="res://src/UserInterface/CoffeeCount.gd" type="Script" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 size = 38
@@ -67,6 +69,15 @@ animations = [ {
 "name": "coin_spinning",
 "speed": 6.5
 } ]
+
+[sub_resource type="Theme" id=12]
+
+[sub_resource type="DynamicFont" id=13]
+size = 20
+extra_spacing_top = 5
+extra_spacing_bottom = 5
+extra_spacing_char = 2
+font_data = ExtResource( 4 )
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2
@@ -147,6 +158,28 @@ text = "Quit"
 [node name="CoinsCounter" parent="ColorRect" instance=ExtResource( 5 )]
 margin_right = 105.0
 margin_bottom = 50.0
+
+[node name="CoffeeCount" type="Panel" parent="ColorRect"]
+margin_left = 120.0
+margin_right = 220.0
+margin_bottom = 45.0
+script = ExtResource( 21 )
+
+[node name="Coffe" type="Label" parent="ColorRect/CoffeeCount"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 7.0
+margin_top = 3.0
+margin_right = -1.0
+margin_bottom = 3.0
+text = "00"
+align = 2
+valign = 1
+autowrap = true
+
+[node name="Pixil-frame-0(3)" type="Sprite" parent="ColorRect/CoffeeCount"]
+position = Vector2( 27, 20 )
+texture = ExtResource( 20 )
 
 [node name="Tween" type="Tween" parent="."]
 
@@ -630,6 +663,16 @@ margin_bottom = 45.0
 custom_fonts/font = SubResource( 5 )
 text = "X"
 
+[node name="langBtn" type="Button" parent="."]
+margin_left = 615.0
+margin_top = 355.0
+margin_right = 795.0
+margin_bottom = 395.0
+theme = SubResource( 12 )
+custom_fonts/font = SubResource( 13 )
+text = "Pt-Br"
+icon_align = 1
+
 [connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_ResumeButton_pressed"]
 [connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/CardsButton" to="." method="_on_CardsButton_pressed"]
 [connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
@@ -655,3 +698,4 @@ text = "X"
 [connection signal="pressed" from="Quality/voltarMenu9" to="." method="_on_voltarMenu9_pressed"]
 [connection signal="pressed" from="DataDriven/voltarMenu10" to="." method="_on_voltarMenu10_pressed"]
 [connection signal="pressed" from="explic_cards/voltarMenu0" to="." method="_on_voltarMenu0_pressed"]
+[connection signal="pressed" from="langBtn" to="." method="_on_langBtn_pressed"]

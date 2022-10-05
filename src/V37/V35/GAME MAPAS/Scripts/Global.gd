@@ -1,7 +1,7 @@
 extends Node
 var lang=1
 var item := false
-var cafeM = 0
+var cafeM = 1
 var cafeL = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():

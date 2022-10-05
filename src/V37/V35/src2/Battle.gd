@@ -8,41 +8,46 @@ var is_defending = false
 var chosen_alt=0#alternativa escolhida
 var question_id#variavel que armazena um numero aleatorio
 var multi=0
-var questions=Questions.EnListaQDim0
-var alternatives=Questions.EnListaADim0
+var questions
+var alternatives
 func _init():
 	OS.min_window_size = OS.window_size
 	OS.max_window_size = OS.get_screen_size()
 func _ready():
 	MusicGlobal.play_music7()
-	
-	Checkpoint.enemy=Checkpoint.enemy1
-	
+
 	if(Checkpoint.dimension==0 and Global.lang==1):
 		questions=Questions.EnListaQDim0 
 		alternatives=Questions.EnListaADim0
+		Checkpoint.enemy=Checkpoint.enemy0
 	elif(Checkpoint.dimension==0 and Global.lang==2):
 		questions=Questions.PtListaQDim0
 		alternatives=Questions.PtListaADim0
+		Checkpoint.enemy=Checkpoint.enemy0
 	elif(Checkpoint.dimension==1 and Global.lang==1):
 		questions=Questions.EnListaQDim1
 		alternatives=Questions.EnListaADim1
+		Checkpoint.enemy=Checkpoint.enemy1
 	elif(Checkpoint.dimension==1 and Global.lang==2):
 		questions=Questions.PtListaQDim1
 		alternatives=Questions.PtListaADim1
+		Checkpoint.enemy=Checkpoint.enemy1
 	elif(Checkpoint.dimension==2 and Global.lang==1):
 		questions=Questions.EnListaQDim2
 		alternatives=Questions.EnListaADim2
+		Checkpoint.enemy=Checkpoint.enemy2
 	elif(Checkpoint.dimension==2 and Global.lang==2):
 		questions=Questions.PtListaQDim2
 		alternatives=Questions.PtListaADim2
+		Checkpoint.enemy=Checkpoint.enemy2
 	elif(Checkpoint.dimension==3 and Global.lang==1):
 		questions=Questions.EnListaQDim3
 		alternatives=Questions.EnListaADim3
+		Checkpoint.enemy=Checkpoint.enemy3
 	elif(Checkpoint.dimension==3 and Global.lang==2):
 		questions=Questions.PtListaQDim3
 		alternatives=Questions.PtListaADim3
-
+		Checkpoint.enemy=Checkpoint.enemy3
 	
 	set_health($EnemyContainer/ProgressBar, Checkpoint.enemy.health, Checkpoint.enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBar, State.current_health, State.max_health)
@@ -53,9 +58,12 @@ func _ready():
 	
 	$Textbox.hide()
 	$ActionsPanel.hide()
-	
-	display_text("A wild %s appears!" % Checkpoint.enemy.name.to_upper())
-	yield(self, "textbox_closed")
+	if(Global.lang==1):
+		display_text("A wild %s appears!" % Checkpoint.enemy.name.to_upper())
+		yield(self, "textbox_closed")
+	else:
+		display_text("Um %s aparece!" % Checkpoint.enemy.name.to_upper())
+		yield(self, "textbox_closed")
 	$ActionsPanel.show()
 
 func set_health(progress_bar, health, max_health):
@@ -74,23 +82,20 @@ func display_text(text):
 	$Textbox/Label.text=text
 
 func enemy_turn():
-	display_text("%s launches at you fiercely!" % Checkpoint.enemy.name)
-	yield(self, "textbox_closed")
-	
-	if is_defending:
-		is_defending = false
-		$AnimationPlayer.play("mini_shake")
-		yield($AnimationPlayer, "animation_finished")
-		display_text("You defended successfully!")
+	if(Global.lang==1):
+		display_text("%s launches at you fiercely!" % Checkpoint.enemy.name)
 		yield(self, "textbox_closed")
 	else:
-		current_player_health = max(0, current_player_health - Checkpoint.enemy.damage)
-		set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
-		$AnimationPlayer.play("shake")
-		yield($AnimationPlayer, "animation_finished")
-		display_text("%s dealt %d damage!" % [Checkpoint.enemy.name, Checkpoint.enemy.damage])
+		display_text("%s te ataca ferozmente!" % Checkpoint.enemy.name)
 		yield(self, "textbox_closed")
-		if(current_player_health<=0):
+	
+	current_player_health = max(0, current_player_health - Checkpoint.enemy.damage)
+	set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
+	$AnimationPlayer.play("shake")
+	yield($AnimationPlayer, "animation_finished")
+	display_text("%s dealt %d damage!" % [Checkpoint.enemy.name, Checkpoint.enemy.damage])
+	yield(self, "textbox_closed")
+	if(current_player_health<=0):
 			get_tree().change_scene("res://Gameover/GAMEOVER.tscn")
 	$ActionsPanel.show()
 
@@ -102,9 +107,12 @@ func _on_Run_pressed():
 
 
 func Attack():
-	
-	display_text("You attack!")
-	yield(self, "textbox_closed")
+	if(Global.lang==1):
+		display_text("You attack!")
+		yield(self, "textbox_closed")
+	else:
+		display_text("Você ataca!")
+		yield(self, "textbox_closed")
 	var tdam=State.damage*multi
 	
 	current_enemy_health = max(0, current_enemy_health - tdam)
@@ -113,12 +121,20 @@ func Attack():
 	$AnimationPlayer.play("enemy_damaged")
 	yield($AnimationPlayer, "animation_finished")
 	
-	display_text("You dealt %d damage!" % tdam)
-	yield(self, "textbox_closed")
+	if(Global.lang==1):
+		display_text("You dealt %d damage!" % tdam)
+		yield(self, "textbox_closed")
+	else:
+		display_text("Você causou %d de dano!" % tdam)
+		yield(self, "textbox_closed")
 	
 	if current_enemy_health == 0:
-		display_text("%s was defeated!" % Checkpoint.enemy.name)
-		yield(self, "textbox_closed")
+		if(Global.lang==1):
+			display_text("%s was defeated!" % Checkpoint.enemy.name)
+			yield(self, "textbox_closed")
+		else:
+			display_text("%s foi derrotado!" % Checkpoint.enemy.name)
+			yield(self, "textbox_closed")
 		
 		$AnimationPlayer.play("enemy_died")
 		yield($AnimationPlayer, "animation_finished")
@@ -130,13 +146,36 @@ func Attack():
 
 
 func _on_Defend_pressed():
-	is_defending = true
-	
-	display_text("You prepare defensively!")
-	yield(self, "textbox_closed")
-	yield(get_tree().create_timer(0.25), "timeout")
-	
-	enemy_turn()
+	if(Global.cafeM==0):
+		if(Global.lang==1):
+			display_text("You don't have any coffee!!!")
+			yield(self, "textbox_closed")
+		else:
+			display_text("Você não tem nenhum café!!!")
+			yield(self, "textbox_closed")
+		$ActionsPanel.show()
+	else:
+		if(Global.lang==1):
+			display_text("A delicious coffee gives you determination!!!")
+			yield(self, "textbox_closed")
+		else:
+			display_text("Um delicioso café lhe enche de determinação!!!")
+			yield(self, "textbox_closed")
+		current_player_health = max(0, current_player_health +50)
+		if(current_player_health>State.max_health):
+			current_player_health=State.max_health
+		set_health($PlayerPanel/PlayerData/ProgressBar, current_player_health, State.max_health)
+		$AnimationPlayer.play("shake")
+		yield($AnimationPlayer, "animation_finished")
+		if(Global.lang==1):
+			display_text("You recovered 50HP!!!")
+			yield(self, "textbox_closed")
+		else:
+			display_text("Você recuperou 50 pontos de vida!!!")
+			yield(self, "textbox_closed")
+		yield(get_tree().create_timer(0.5), "timeout")
+		Global.cafeM=Global.cafeM-1
+		enemy_turn()
 	
 func _on_Precision_pressed():
 	$Precision.show()

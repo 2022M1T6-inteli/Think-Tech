@@ -13,8 +13,22 @@ onready var resume_button = center_cont.get_node(@"VBoxContainer/ResumeButton")
 onready var root = get_tree().get_root()
 onready var scene_root = root.get_child(root.get_child_count() - 1)
 onready var tween = $Tween
+func _on_langBtn_pressed():
+	if Global.lang==1:
+		Global.lang=2
+	else:
+		Global.lang=1
 
 func _process(delta): #Aqui é a sessão de desbloquear os cards
+	
+	if Global.lang==1:
+		$ColorRect/CenterContainer/VBoxContainer/ResumeButton.text="Resume"
+		$ColorRect/CenterContainer/VBoxContainer/QuitButton.text="Quit"
+		$langBtn.text="Eng"
+	else:
+		$ColorRect/CenterContainer/VBoxContainer/ResumeButton.text="Resumir"
+		$ColorRect/CenterContainer/VBoxContainer/QuitButton.text="Sair"
+		$langBtn.text="Pt-Br"
 	if Checkpoint.coinsCollected>=5:
 		$Cards/card_test.hide()
 	
