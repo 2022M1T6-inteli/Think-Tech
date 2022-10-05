@@ -416,7 +416,6 @@ scale = Vector2( 1.3064, 1.31096 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ada"]
 position = Vector2( -17.6056, 20.5956 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 13 )
 
 [connection signal="body_entered" from="morte" to="." method="_on_morte_body_entered"]

@@ -8,6 +8,7 @@ onready var _pause_menu = $InterfaceLayer/PauseMenu
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Checkpoint.dimension=3
 	Checkpoint.coinsCollected=Checkpoint.coinsSaved
 	Checkpoint.packed_scene.pack(get_tree().get_current_scene()) # Checkpoint chamado para salvar a cena mapa1 assim que o player entra
 	ResourceSaver.save("res://my_scene.tscn", Checkpoint.packed_scene)
