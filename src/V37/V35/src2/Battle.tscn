@@ -190,9 +190,6 @@ margin_top = -77.0
 margin_right = 1.0
 margin_bottom = -45.0
 custom_styles/panel = SubResource( 3 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="PlayerData" type="HBoxContainer" parent="PlayerPanel"]
 anchor_right = 1.0
@@ -323,12 +320,11 @@ enabled_focus_mode = 0
 text = "skip"
 
 [node name="Textbox" type="Panel" parent="."]
-visible = false
 anchor_right = 1.0
-margin_left = 8.0
+margin_left = 4.0
 margin_top = 8.0
 margin_right = -8.0
-margin_bottom = 64.0
+margin_bottom = 96.0
 custom_styles/panel = SubResource( 6 )
 
 [node name="Label" type="Label" parent="Textbox"]
@@ -532,25 +528,18 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="temporario" type="Label" parent="."]
-margin_left = 297.0
-margin_top = 67.0
-margin_right = 480.0
-margin_bottom = 125.0
-
 [node name="EnemyContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.442
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -142.5
-margin_top = -152.5
-margin_right = 142.5
-margin_bottom = 152.5
+anchor_bottom = 0.442
+margin_left = -140.0
+margin_top = -98.16
+margin_right = 145.0
+margin_bottom = 206.84
 rect_scale = Vector2( 0.9, 0.8 )
 __meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
+"_edit_group_": true
 }
 
 [node name="ProgressBar" type="ProgressBar" parent="EnemyContainer"]

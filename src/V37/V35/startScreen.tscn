@@ -71,10 +71,10 @@ custom_fonts/font = SubResource( 4 )
 text = "Quit"
 
 [node name="langBtn" type="Button" parent="."]
-margin_left = 692.0
-margin_top = 393.0
+margin_left = 670.0
+margin_top = 390.0
 margin_right = 790.0
-margin_bottom = 429.0
+margin_bottom = 426.0
 theme = SubResource( 1 )
 custom_fonts/font = SubResource( 4 )
 text = "Pt-Br"

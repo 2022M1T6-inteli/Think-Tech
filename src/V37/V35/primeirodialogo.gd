@@ -205,3 +205,18 @@ func npause_eng(timeline_bau_eng):
 func npause_port(timeline_bau_port):
 	get_tree().paused = false # Despausa o jogo
 	$instrucao_bau/CollisionShape2D.disabled=true
+
+
+func _on_red_body_entered(body):
+	if body.name == "Player": # Identifica que o player entrou
+		if Global.lang==1:
+			var dialog = Dialogic.start("red_eng") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'nred_eng') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
+
+		if Global.lang==2:
+			var dialog = Dialogic.start("red_port") # A variável recebe a timeline Primeirodialogo
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS # Ao fazer isso, mesmo com o get_tree().paused ativado, o plugin dialogic funcioná
+			dialog.connect('timeline_end', self, 'nred_port') # Conecta o fim do diálogo com uma função que dará instruções sobre o que fazer quando esse diálogo acabar
+			add_child(dialog) # Adiciona um nó chamado dialog
