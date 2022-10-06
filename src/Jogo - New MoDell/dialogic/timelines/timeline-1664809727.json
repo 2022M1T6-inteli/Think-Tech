@@ -1,0 +1,21 @@
+{
+	"events": [
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uau! O portão está fechado. Acho que vou ter que hackear o sistema para abrir o caminho!"
+		},
+		{
+			"character": "character-1664810111.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Agora você irá para a tela de combate. Para atacar o inimigo aperte em attack, utilizando o cursor. Responda as perguntas para dar danos."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664809727.json",
+		"name": "port_dialogcombat"
+	}
+}

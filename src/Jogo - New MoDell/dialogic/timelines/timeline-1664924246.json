@@ -1,0 +1,39 @@
+{
+	"events": [
+		{
+			"character": "character-1664924406.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh! Então você é o invasor que tenho ouvido falar."
+		},
+		{
+			"character": "character-1664924406.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vejo que conseguiu chegar até mim, mesmo com tantos obstáculos no caminho."
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sim, felizmente consegui."
+		},
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "E creio ter aprendido tudo que me foi mostrado no caminho. "
+		},
+		{
+			"character": "character-1664924406.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vejo que está confiante. Mas ainda há um longo caminho pela frente..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664924246.json",
+		"name": "ada_port"
+	}
+}

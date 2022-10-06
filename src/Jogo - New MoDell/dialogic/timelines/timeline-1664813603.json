@@ -1,0 +1,21 @@
+{
+	"events": [
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você chegou ao planeta Roadmap. Aqui você irá entender como alinhamos os nossos objetivos. "
+		},
+		{
+			"character": "character-1661366253.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Explore o planeta e tenha cuidado com os desafior."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1664813603.json",
+		"name": "map2_port"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"events": [
+		{
+			"character": "character-1661366221.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wow! The gate is closed. I think I'll have to hack the system to open the way!"
+		},
+		{
+			"character": "character-1663787075.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You will now go to the combat screen. To attack the enemy press attack, using the cursor. Answer the questions to do damage."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.4",
+		"file": "timeline-1661954295.json",
+		"name": "eng_dialogcombat"
+	}
+}
