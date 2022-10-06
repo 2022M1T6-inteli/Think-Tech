@@ -60,21 +60,24 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 12/08/2022
+* 0.0.1 - 12/08/2022
     * Primeira versão do jogo - Menu Inicial
     * Primeira versão do GDD
-* 0.2.0 - 26/08/2022
+* 0.1.0 - 26/08/2022
     * Segunda versão do jogo - Implementação das mecânicas básicas
     * Segunda versão do GDD
 * 0.1.1 - 09/09/2022
     * Terceira versão do jogo - Mapas e combate
     * Terceira verão do GDD
-* 0.1.0 - 23/09/2022
+* 0.1.2 - 23/09/2022
     * Quarta versão do jogo - Checkpoints e fase tutorial
     * Quarta versão do GDD
-* 0.0.1 - 02/10/2022
+* 0.1.3 - 02/10/2022
     * Upload de imagens do jogo
     * Readme atualizado
+* 0.1.4 - 05/10/2022
+    * Versão final do jogo
+    * Versão final do GDD
 
 ## 📋 Licença/License
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T6/Projeto4">New Modell</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/2022M1T6/Projeto4">Dell, INTELI - Instituto de tecnologia e liderança, Arthur Tsukamoto Oliveira, Lucas Galvão, Vinicius Kenji Kumagai, Celine Pereira de Souza, Marcos Vinicyus and Eduarda Gonzaga Oliveira</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
