@@ -35,7 +35,6 @@
 |--> imagens<br>
 |--> src<br>
 | readme.md<br>
-| license.txt
 
 Dentre os arquivos presentes na raiz do projeto, definem-se:
 
