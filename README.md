@@ -25,8 +25,11 @@ A Dell Digital Global está passando por uma transição no modelo atual de dese
 <br><br>
 Nossa proposta é o desenvolvimento de um jogo no qual os jogadores desbloquearão cards sobre o modelo de Produto durante as fases e no decorrer das fases também terá uma dinâmica de combate, onde os usuários terão que responder quizzes para ganhar. 
 <br>
+## 🎮 Jogue agora
 
-## 🛠 Estrutura de pastas
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [New MoDell]( https://2022m1t6-inteli.github.io/Think-Tech)
+
+## 📁 Estrutura de pastas
 
 |--> docs<br>
 |--> documentos<br>
